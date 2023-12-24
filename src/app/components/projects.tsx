@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LogoSVG from "../assets/logos";
+import LogoSVG from "@/app/assets/logos.tsx";
 import Image from "next/image";
 import playtrace from "../assets/images/playtrace.png";
 import vialect from "../assets/images/vialect.png";
@@ -20,7 +20,6 @@ const projects = [
             "OpenAI",
             "HuggingFace",
             "Qdrant",
-            "Haystack",
             "PyTorch",
             "Docker",
         ],
@@ -82,19 +81,21 @@ export default function Projects() {
                                 index % 2 === 0 ? "" : "lg:flex-row-reverse"
                             } gap-8 lg:gap-12 my-12`}
                         >
-                            {/* Project Description */}
+                            {/* PROJECT INFO */}
                             <div className="lg:flex-1">
                                 <h2 className="text-3xl font-semibold">
                                     {proj.title}
-                                    <span className="block text-xl font-normal">
+                                    <span className="block text-base font-medium px-[0.3rem] opacity-80">
                                         {proj.tagline}
                                     </span>
                                 </h2>
-                                <div className="mt-4 inline-flex">
+                                <div className="mt-4 inline-flex group">
                                     {proj.stack.map((tech, techIndex) => (
-                                        <div key={techIndex} className="flex justify-start px-2 h-full w-full hover:scale-110 text-center text-sm font-semibold text-transparent hover:text-black/80">
-                                            <LogoSVG name={tech} wh={6} scale={100} />
-                                            <span className="align-middle hover:cursor-pointer pt-0.5">{tech}</span>
+                                        <div key={techIndex} className="flex items-center justify-start px-1.5 h-full w-full hover:scale-110 text-center">
+                                            <LogoSVG name={tech} wh={1.5} scale={1} />
+                                            <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs text-transparent group-hover:text-black/80 text-xs font-semibold pl-0.5 hover:cursor-pointer">
+                                                {tech}
+                                            </span>
                                         </div>
                                     ))}
                                 </div>
