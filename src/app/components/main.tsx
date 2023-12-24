@@ -35,7 +35,7 @@ export default function Main() {
             <div className="flex justify-center isolate -z-10 pb-4">
                 <div className="mx-auto max-w-7xl px-6 py-8 sm:py-10 lg:px-8">
                     <div className="max-sm:grid-cols-none max-w-2xl grid grid-cols-2 gap-x-4 gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-4">
-                        <h1 className="gsap-text w-full text-[3.5rem] font-bold tracking-tight text-gray-900">
+                        <h1 className="gsap-text w-full lg:text-[3.5rem] md:text-5xl sm:text-4xl font-bold tracking-tight text-gray-900">
                             Gordon Ta<span>Full Stack Developer</span>
                         </h1>
                         <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">

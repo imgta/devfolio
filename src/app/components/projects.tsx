@@ -18,10 +18,10 @@ const projects = [
         stack: [
             "Streamlit",
             "OpenAI",
-            "PyTorch",
-            "Haystack",
             "HuggingFace",
             "Qdrant",
+            "Haystack",
+            "PyTorch",
             "Docker",
         ],
         demo: null,
@@ -90,16 +90,17 @@ export default function Projects() {
                                         {proj.tagline}
                                     </span>
                                 </h2>
-                                <p className="mt-4 text-gray-600 text-xl">
-                                    {proj.description}
-                                </p>
-                                <div className="mt-4 flex">
+                                <div className="mt-4 inline-flex">
                                     {proj.stack.map((tech, techIndex) => (
-                                        <div key={techIndex} className="px-2">
-                                            <LogoSVG name={tech} wh={8} />
+                                        <div key={techIndex} className="flex justify-start px-2 h-full w-full hover:scale-110 text-center text-sm font-semibold text-transparent hover:text-black/80">
+                                            <LogoSVG name={tech} wh={6} scale={100} />
+                                            <span className="align-middle hover:cursor-pointer pt-0.5">{tech}</span>
                                         </div>
                                     ))}
                                 </div>
+                                <p className="mt-4 text-gray-600 text-xl">
+                                    {proj.description}
+                                </p>
                             </div>
 
                             {/* Image */}
