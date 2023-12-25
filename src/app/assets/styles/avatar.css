@@ -1,15 +1,15 @@
 .avatar-img {
     background-image: url("../images/avatar.jpg");
-    width: 16rem;
-    height: 16rem;
+    width: 18rem;
+    height: 18rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    border: 3px solid black;
+    border: 3px solid #111827;
 
-    /* @media (max-width: 500px) {
-        width: 12rem;
-        height: 12rem;
+    /* @media (max-width: 1024px) {
+        width: 15rem;
+        height: 15rem;
     } */
 
     -webkit-animation: morph 8s ease-in-out infinite;

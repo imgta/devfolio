@@ -5,7 +5,7 @@ import { Dialog } from "@headlessui/react";
 
 //------------------------------------------------------------
 const navigation = [
-    { name: "About", href: "#" },
+    // { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
@@ -22,9 +22,9 @@ export default function Header() {
                 aria-label="Global"
             >
                 <div className="hidden sm:flex sm:flex-1">
-                @imgta
+                <span className="font-semibold">@imgta</span>
                 </div>
-                <div className="flex gap-x-12">
+                <div className="flex nav-link gap-x-12">
                     {navigation.map((item) => (
                         <a
                             key={item.name}
@@ -35,12 +35,15 @@ export default function Header() {
                         </a>
                     ))}
                 </div>
-                <div className="sm:flex sm:flex-1 sm:justify-end">
+                <div className="flex flex-1 justify-end">
                     <a
-                        href="https://calendly.com/imgta"
-                        className="text-sm font-semibold leading-6 text-gray-900"
+                        href="https://drive.google.com/file/d/11FBcQsXcVZ-3cU7uAX1mGK19cd1FOIgC/view?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold leading-6 text-gray-900 group"
                     >
-                        Connect <span aria-hidden="true">&rarr;</span>
+                        <svg className="hidden group-hover:inline-block w-[1.3rem] h-[1.3rem] pr-0.5 mb-0.5 fill-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M211.48,35.32l-130.25-23A20,20,0,0,0,58.05,28.54l-29.75,169a20,20,0,0,0,16.22,23.16l130.25,23h0a20.1,20.1,0,0,0,3.52.31A20,20,0,0,0,198,227.46l29.75-169A20,20,0,0,0,211.48,35.32ZM175,219.36,52.63,197.75,81,36.64,203.37,58.25ZM91.9,67a12,12,0,0,1,13.9-9.73L173,69.14A12,12,0,0,1,171,93a12.59,12.59,0,0,1-2.1-.18L101.63,80.9A12,12,0,0,1,91.9,67ZM85,106.39a12,12,0,0,1,13.91-9.73l67.22,11.88A12,12,0,0,1,164,132.35a12.5,12.5,0,0,1-2.1-.18L94.69,120.29A12,12,0,0,1,85,106.39ZM78,145.78a12,12,0,0,1,13.9-9.73L125.54,142a12,12,0,0,1-2.07,23.82,11.63,11.63,0,0,1-2.1-.19l-33.61-5.93A12,12,0,0,1,78,145.78Z"></path></svg>
+                        <span className="group-hover:font-bold">Resume</span>
                     </a>
                 </div>
             </nav>
@@ -64,14 +67,6 @@ export default function Header() {
                                         {item.name}
                                     </a>
                                 ))}
-                            </div>
-                            <div className="py-6">
-                                <a
-                                    href="#"
-                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                >
-                                    Log in
-                                </a>
                             </div>
                         </div>
                     </div>

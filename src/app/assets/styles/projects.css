@@ -1,0 +1,9 @@
+.project img.webp {
+    transform: translateY(0%);
+    transition: transform 8s ease-in-out;
+    object-fit: cover;
+}
+
+.project:hover img.webp {
+    transform: translateY(-100%);
+}

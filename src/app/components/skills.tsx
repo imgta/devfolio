@@ -51,7 +51,7 @@ const skillGroups: { [key: string]: string[] } = {
 };
 
 //------------------------------------------------------------
-export default function Skills() {
+export default function TechStack() {
     const [hoverSkill, setHoverSkill] = useState("");
 
     const mouseEnter = (skill: string) => setHoverSkill(skill);
@@ -72,13 +72,13 @@ export default function Skills() {
         <>
             <div className="">
                 <div id="skills" className="mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
-                    <h2 className="gsap-text font-semibold text-3xl text-center">
-                        SKILLS<span>Frameworks and Languages.</span>
+                    <h2 className="gsap-text text-gray-900 font-bold text-4xl text-center">
+                        Tech Stack<span>Frameworks and Languages.</span>
                     </h2>
                     <div className="flex justify-center pt-10">
                         <ul
                             role="list"
-                            className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-5 xl:gap-x-8"
+                            className="grid grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8"
                         >
                             {skills.map((name, index) => {
                                 const { scale, opacity } = getSkillGroup(name);
