@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/avatar.css";
+import "@/app/assets/styles/avatar.css";
 
 
 const AvatarPic = () => {

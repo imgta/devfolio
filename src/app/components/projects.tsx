@@ -1,7 +1,7 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import '@/app/assets/styles/projects.css'
 import LogoSVG from "@/app/assets/logos.tsx";
-import Image from "next/image";
 import playtrace from "@/app/assets/images/playtrace.webp";
 import playtracePng from "@/app/assets/images/playtrace.png";
 import vialect from "@/app/assets/images/vialect.webp";
@@ -98,11 +98,19 @@ export default function Projects() {
         <>
             <div
                 id="projects"
-                className="heading mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
+                className="mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
             >
-                <h2 className="gsap-text tracking-tight text-gray-900 font-bold text-4xl text-center">
-                    Projects<span>Case Studies and Challenges.</span>
-                </h2>
+                    <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
+                    <div className="header-con inline-block group-hover:hidden">
+                        <h1 className="header-text">
+                            Projects
+                        </h1>
+                    </div>
+                    <div className="typed-con hidden group-hover:inline-block">
+                        <span className="typed">Case Studies and Challenges</span>
+                        <span className="blinking">_</span>
+                    </div>
+                </div>
                 <p className="mt-4 text-lg leading-8 text-gray-600">
                     The following stemmed from a combination of sheer curiosity, boyish enthusiasm, and voluntary challenges. Each project warranted their own case studies allowing me to further develop my skills and grow.
                 </p>

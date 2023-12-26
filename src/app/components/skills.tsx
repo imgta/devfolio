@@ -70,10 +70,18 @@ export default function TechStack() {
 
     return (
         <>
-            <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
-                <h2 className="gsap-text text-gray-900 font-bold text-4xl text-center">
-                    Tech Stack<span>Frameworks and Languages.</span>
-                </h2>
+            <div id="skills" className="mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
+                <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
+                    <div className="header-con inline-block group-hover:hidden">
+                        <h1 className="header-text">
+                            Tech Stack
+                        </h1>
+                    </div>
+                    <div className="typed-con hidden group-hover:inline-block">
+                        <span className="typed">Frameworks and Languages</span>
+                        <span className="blinking">_</span>
+                    </div>
+                </div>
                 <div className="flex justify-center pt-10">
                     <ul
                         role="list"
