@@ -7,6 +7,7 @@
 
 .gsap-text {
     margin: 0;
+
     width: 100%;
     background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
     -webkit-background-clip: text;
@@ -41,8 +42,3 @@
 .gsap-text:hover>span {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-
-/* a {
-    text-decoration: none;
-    color: inherit;
-} */

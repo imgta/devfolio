@@ -70,37 +70,35 @@ export default function TechStack() {
 
     return (
         <>
-            <div className="">
-                <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
-                    <h2 className="gsap-text text-gray-900 font-bold text-4xl text-center">
-                        Tech Stack<span>Frameworks and Languages.</span>
-                    </h2>
-                    <div className="flex justify-center pt-10">
-                        <ul
-                            role="list"
-                            className="grid grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8"
-                        >
-                            {skills.map((name, index) => {
-                                const { scale, opacity } = getSkillGroup(name);
-                                return (
-                                    <li key={index} className="relative">
-                                        <div
-                                            onMouseEnter={() =>
-                                                mouseEnter(name)
-                                            }
-                                            onMouseLeave={mouseLeave}
-                                            className={`group rounded-lg bg-white focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 flex justify-center hover:scale-125 ${scale} ${opacity}`}
-                                        >
-                                            <LogoSVG name={name} wh={1.75} scale={1.25} />
-                                        </div>
-                                        <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900 text-center">
-                                            {name}
-                                        </p>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
+            <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
+                <h2 className="gsap-text text-gray-900 font-bold text-4xl text-center">
+                    Tech Stack<span>Frameworks and Languages.</span>
+                </h2>
+                <div className="flex justify-center pt-10">
+                    <ul
+                        role="list"
+                        className="grid grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8"
+                    >
+                        {skills.map((name, index) => {
+                            const { scale, opacity } = getSkillGroup(name);
+                            return (
+                                <li key={index} className="relative">
+                                    <div
+                                        onMouseEnter={() =>
+                                            mouseEnter(name)
+                                        }
+                                        onMouseLeave={mouseLeave}
+                                        className={`group rounded-lg bg-white focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 flex justify-center hover:scale-125 ${scale} ${opacity}`}
+                                    >
+                                        <LogoSVG name={name} wh={1.75} scale={1.25} />
+                                    </div>
+                                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900 text-center">
+                                        {name}
+                                    </p>
+                                </li>
+                            );
+                        })}
+                    </ul>
                 </div>
             </div>
         </>
