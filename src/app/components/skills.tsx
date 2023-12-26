@@ -70,7 +70,7 @@ export default function TechStack() {
 
     return (
         <>
-            <div id="skills" className="mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
+            <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
                 <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
                     <div className="header-con inline-block group-hover:hidden">
                         <h1 className="header-text">

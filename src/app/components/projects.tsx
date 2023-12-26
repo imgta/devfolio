@@ -98,7 +98,7 @@ export default function Projects() {
         <>
             <div
                 id="projects"
-                className="mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
+                className="heading mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
             >
                     <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
                     <div className="header-con inline-block group-hover:hidden">

@@ -1,12 +1,11 @@
-//------------------------------------------------------------
 
 //------------------------------------------------------------
 export default function Contact() {
     return (
     <div className="py-14">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl lg:mx-0">
-                <div id="contact" className="group text-[2.4rem] font-bold text-gray-900">
+            <div id="contact" className="heading mx-auto max-w-2xl lg:mx-0">
+                <div className="group text-[2.4rem] font-bold text-gray-900">
                     <div className="header-con inline-block group-hover:hidden">
                         <h1 className="header-text">
                             Contact
