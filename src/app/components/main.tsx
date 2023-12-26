@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useEffect } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import SplitType from "split-type";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@/app/assets/styles/gsapText.css";
+import "@/app/assets/styles/typing.css"
 import NavBar from "./navigation";
 import Hero from "./hero";
 import TechStack from "./skills";
@@ -18,7 +20,7 @@ export default function Main() {
         if (typeof window !== "undefined") {
             gsap.registerPlugin(ScrollTrigger);
 
-            const textElements = gsap.utils.toArray(".text");
+            const textElements = gsap.utils.toArray(".gsap-text");
 
             textElements.forEach((text: any) => {
                 gsap.to(text, {
@@ -32,6 +34,7 @@ export default function Main() {
                     },
                 });
             });
+
         }
     }, []);
 
