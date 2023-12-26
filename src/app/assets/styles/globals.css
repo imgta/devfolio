@@ -10,6 +10,10 @@ html {
   transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+.heading {
+  scroll-margin-top: 74px;
+}
+
 .nav-link a:after {
   display:block;
   content: '';

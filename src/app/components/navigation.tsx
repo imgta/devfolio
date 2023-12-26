@@ -12,17 +12,19 @@ const navigation = [
 ];
 
 //------------------------------------------------------------
-export default function Header() {
+export default function NavBar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
     return (
-        <header className="bg-white">
+        <header className="bg-white sticky top-0 left-0 right-0 z-50">
             <nav
                 className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
                 aria-label="Global"
             >
                 <div className="hidden sm:flex sm:flex-1">
-                <span className="font-semibold">@imgta</span>
+                    <span className="font-semibold hover:cursor-pointer" onClick={scrollTop}>imgta.dev</span>
                 </div>
                 <div className="flex nav-link gap-x-12">
                     {navigation.map((item) => (

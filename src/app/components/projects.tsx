@@ -21,7 +21,7 @@ const projects = [
         imageWebp: vialect,
         imagePng: vialectPng,
         description:
-            "ViaLect is a multimedia content transformer streamlines your media intake by leveraging NLP to transform video/audio content into navigable collections of transcribed text and summaries.",
+            "ViaLect is a multimedia content transformer streamlines your media intake by leveraging NLP to transcribe video/audio content into navigable collections of transcribed text and summaries.",
         stack: [
             "Streamlit",
             "OpenAI",
@@ -98,7 +98,7 @@ export default function Projects() {
         <>
             <div
                 id="projects"
-                className="mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
+                className="heading mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
             >
                 <h2 className="gsap-text tracking-tight text-gray-900 font-bold text-4xl text-center">
                     Projects<span>Case Studies and Challenges.</span>

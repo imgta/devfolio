@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
 import "@/app/assets/styles/gsapText.css";
-import Header from "./header";
+import NavBar from "./navigation";
 import Hero from "./hero";
 import TechStack from "./skills";
 import Projects from "./projects";
@@ -37,7 +37,7 @@ export default function Main() {
 
     return (
         <>
-            <Header />
+            <NavBar />
             <main className="isolate">
                 <div className="pb-32">
                     <Hero />

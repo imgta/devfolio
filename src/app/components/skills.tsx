@@ -71,7 +71,7 @@ export default function TechStack() {
     return (
         <>
             <div className="">
-                <div id="skills" className="mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
+                <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
                     <h2 className="gsap-text text-gray-900 font-bold text-4xl text-center">
                         Tech Stack<span>Frameworks and Languages.</span>
                     </h2>
