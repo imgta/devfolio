@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 //------------------------------------------------------------
 const abouts = [
@@ -45,7 +44,6 @@ const abouts = [
 
 //------------------------------------------------------------
 
-//------------------------------------------------------------
 export default function AboutMe() {
     return (
         <>

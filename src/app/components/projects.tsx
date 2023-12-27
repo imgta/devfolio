@@ -174,7 +174,7 @@ export default function Projects() {
                                                 wh={1.5}
                                                 scale={1}
                                             />
-                                            <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs group-hover:text-black/80 text-xs font-semibold items-center hover:cursor-pointer pl-0.5">
+                                            <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-0.5">
                                                 {tech}
                                             </span>
                                         </div>

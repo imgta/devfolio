@@ -24,19 +24,19 @@ export default function Contact() {
                 <div className="border-l border-indigo-600">
                 <h3 className="pl-6 font-semibold text-gray-900">Email me:</h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                <a className="hover:text-gray-900" href="mailto:gphamta@gmail.com"><p>gphamta@gmail.com</p></a>
+                <a className="hover:text-gray-900 font-medium" href="mailto:gphamta@gmail.com"><p>gphamta@gmail.com</p></a>
                 </address>
                 </div>
                 <div className="border-l border-indigo-600">
                 <h3 className="pl-6 font-semibold text-gray-900">Schedule it:</h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                <a className="hover:text-gray-900" href="https://cal.com/gordonta" target="_blank"><p>Calendar</p></a>
+                <a className="hover:text-gray-900 font-medium" href="https://cal.com/gordonta" target="_blank"><p>Calendar</p></a>
                 </address>
                 </div>
                 <div className="border-l border-indigo-600">
-                <h3 className="pl-6 font-semibold text-gray-900">Connect on:</h3>
+                <h3 className="pl-6 font-semibold text-gray-900">Connect:</h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                <a className="hover:text-gray-900" href="https://www.linkedin.com/in/gordonta/" target="_blank"><p>LinkedIn</p></a>
+                <a className="hover:text-gray-900 font-medium" href="https://www.linkedin.com/in/gordonta/" target="_blank"><p>LinkedIn</p></a>
                 </address>
                 </div>
             </div>
