@@ -14,12 +14,12 @@ const skills = [
     "Vue",
     "NextJs",
     "Nuxt",
-    "Streamlit",
-    "PostgreSQL",
     "Tailwind CSS",
+    "PostgreSQL",
     "Strapi",
     "FastAPI",
     "Django",
+    "Streamlit",
     "Python",
     "JavaScript",
     "TypeScript",
@@ -90,17 +90,17 @@ export default function TechStack() {
                         {skills.map((name, index) => {
                             const { scale, opacity } = getSkillGroup(name);
                             return (
-                                <li key={index} className="relative">
+                                <li key={index} className="relative bg-white">
                                     <div
                                         onMouseEnter={() =>
                                             mouseEnter(name)
                                         }
                                         onMouseLeave={mouseLeave}
-                                        className={`group rounded-lg bg-white focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 flex justify-center hover:scale-125 ${scale} ${opacity}`}
+                                        className={`group flex justify-center hover:scale-125 ${scale} ${opacity}`}
                                     >
                                         <LogoSVG name={name} wh={1.75} scale={1.25} />
                                     </div>
-                                    <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-gray-900 text-center">
+                                    <p className="pointer-events-none mt-2 block truncate text-xs sm:text-sm font-medium text-gray-900 text-center">
                                         {name}
                                     </p>
                                 </li>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import "@/app/assets/styles/typing.css"
 import NavBar from "./navigation";
 import Hero from "./hero";
@@ -8,7 +8,6 @@ import TechStack from "./skills";
 import Projects from "./projects";
 import Contact from "./contact";
 import Footer from "./footer";
-
 
 //------------------------------------------------------------
 export default function Main() {
