@@ -35,7 +35,7 @@ export default function Footer() {
                         ))}
                     </div>
                     <p className="mt-8 text-sm leading-5 text-gray-600 font-semibold md:order-1 md:mt-0">
-                        Copyright &copy; 2023 - All rights reserved.
+                        Copyright &copy; {new Date().getFullYear()} - All rights reserved.
                     </p>
                 </div>
             </div>

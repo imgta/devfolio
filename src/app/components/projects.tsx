@@ -13,22 +13,16 @@ import backtabPng from "@/app/assets/images/backtab.png";
 const projects = [
     {
         id: 1,
-        title: "ViaLect",
+        title: "Vialect",
         tagline: "Multimedia Content Transformer",
         date: "November 2023",
         href: "#vialect",
         imageWebp: vialect,
         imagePng: vialectPng,
+        stack: ["Streamlit", "OpenAI", "HuggingFace", "PyTorch"],
         description:
-            "ViaLect is a multimedia content transformer streamlines your media intake by leveraging NLP to transcribe video/audio content into navigable collections of transcribed text and summaries.",
-        stack: [
-            "Streamlit",
-            "OpenAI",
-            "HuggingFace",
-            "PyTorch",
-            "Docker",
-            // "Qdrant",
-        ],
+            "Vialect is a multimedia content transformer streamlines your media intake by leveraging NLP to transcribe video/audio content into navigable collections of transcribed text and summaries.",
+        wip: "Vialect 2.0 - migration to FastAPI/Vue",
         demo: null,
         repo: "https://github.com/imgta/vialect",
     },
@@ -40,9 +34,9 @@ const projects = [
         href: "#playtrace",
         imageWebp: playtrace,
         imagePng: playtracePng,
+        stack: ["Nuxt", "Vue", "Strapi", "Cloudflare", "Supabase", "Render"],
         description:
             "playTrace is a full-stack, social events hosting app that aims to electrify social circles and allow communities to be explored, candidly, through customizable event pages.",
-        stack: ["Nuxt", "Vue", "Strapi", "Cloudflare", "Supabase", "Render"],
         demo: "https://playtrace.app",
         repo: "https://github.com/imgta/playtrace-nuxt",
     },
@@ -54,9 +48,9 @@ const projects = [
         href: "#backtab",
         imageWebp: backtab,
         imagePng: backtabPng,
+        stack: ["React", "FastAPI", "PostgreSQL", "GitLab", "Docker"],
         description:
             "Receipts Tracking App that simplifies how groups of friends can track and split receipt costs during extended trips, or just a night out! As bills incur, users can snap a photo and upload their receipts to their selected group.",
-        stack: ["React", "FastAPI", "PostgreSQL", "GitLab", "Docker"],
         demo: null,
         repo: "https://gitlab.com/imgta/backtab",
     },
@@ -179,8 +173,11 @@ export default function Projects() {
                                         </div>
                                     ))}
                                 </div>
-                                <p className="mt-4 text-gray-600 text-lg">
+                                <p className="mt-4 text-gray-700 text-lg">
                                     {proj.description}
+                                </p>
+                                <p className="mt-4 text-gray-600 text-sm font-medium">
+                                    {proj.wip ? `Coming Soon: ${proj.wip}` : ''}
                                 </p>
                             </div>
 
