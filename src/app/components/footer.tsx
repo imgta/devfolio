@@ -1,4 +1,4 @@
-import LogoSVG from "@/app/assets/logos.tsx";
+import LogoSVG from "@/app/utils/logos";
 
 //------------------------------------------------------------
 const socials = [

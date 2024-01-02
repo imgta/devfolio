@@ -1,14 +1,13 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import '@/app/assets/styles/projects.css'
-import LogoSVG from "@/app/assets/logos.tsx";
+import LogoSVG from "@/app/utils/logos";
 import playtrace from "@/app/assets/images/playtrace.webp";
 import playtracePng from "@/app/assets/images/playtrace.png";
 import vialect from "@/app/assets/images/vialect.webp";
 import vialectPng from "@/app/assets/images/vialect.png";
 import backtab from "@/app/assets/images/backtab.webp";
 import backtabPng from "@/app/assets/images/backtab.png";
-
 
 //------------------------------------------------------------
 const projects = [

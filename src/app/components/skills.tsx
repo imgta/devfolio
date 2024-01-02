@@ -1,14 +1,7 @@
 import React, { useState } from "react";
-import LogoSVG from "@/app/assets/logos";
+import LogoSVG from "@/app/utils/logos";
 
-const other = [
-    // "docker",
-    // "gitlab",
-    // "github",
-    // "haystack",
-    // "qdrant",
-];
-
+//------------------------------------------------------------
 const skills = [
     "React",
     "Vue",
@@ -50,6 +43,24 @@ const skillGroups: { [key: string]: string[] } = {
     CSS3: ["CSS3", "Tailwind CSS"],
 };
 
+const skillUrls: { [key: string]: string } = {
+    "React": "https://react.dev",
+    "Vue": "https://vuejs.org",
+    "NextJs": "https://nextjs.org",
+    "Nuxt": "https://nuxt.com",
+    "Tailwind CSS": "https://tailwindcss.com",
+    "PostgreSQL": "https://www.postgresql.org",
+    "Strapi": "https://strapi.io",
+    "FastAPI": "https://fastapi.tiangolo.com",
+    "Django": "https://www.djangoproject.com",
+    "Streamlit": "https://streamlit.io",
+    "Python": "https://www.python.org",
+    "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "TypeScript": "https://www.typescriptlang.org",
+    "HTML5": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
+    "CSS3": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+};
+
 //------------------------------------------------------------
 export default function TechStack() {
     const [hoverSkill, setHoverSkill] = useState("");
@@ -89,17 +100,20 @@ export default function TechStack() {
                     >
                         {skills.map((name, index) => {
                             const { scale, opacity } = getSkillGroup(name);
+                            const skillUrl = skillUrls[name];
+
                             return (
                                 <li key={index} className="relative bg-white">
-                                    <div
-                                        onMouseEnter={() =>
-                                            mouseEnter(name)
-                                        }
+                                    <a
+                                        href={skillUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onMouseEnter={() => mouseEnter(name)}
                                         onMouseLeave={mouseLeave}
                                         className={`group flex justify-center hover:scale-125 ${scale} ${opacity}`}
                                     >
                                         <LogoSVG name={name} wh={1.75} scale={1.25} />
-                                    </div>
+                                    </a>
                                     <p className="pointer-events-none mt-2 block truncate text-xs sm:text-sm font-medium text-gray-900 text-center">
                                         {name}
                                     </p>
