@@ -19,7 +19,7 @@ const projects = [
         href: "#vialect",
         imageWebp: vialect,
         imagePng: vialectPng,
-        stack: ["Streamlit", "OpenAI", "HuggingFace", "PyTorch"],
+        stack: ["Streamlit", "OpenAI", "ChatGPT", "HuggingFace", "PyTorch"],
         description:
             "Vialect is a multimedia content transformer streamlines your media intake by leveraging NLP to transcribe video/audio content into navigable collections of transcribed text and summaries.",
         wip: "Vialect 2.0 - migration to FastAPI/Vue",
