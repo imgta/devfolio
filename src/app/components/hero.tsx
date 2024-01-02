@@ -1,11 +1,12 @@
 import AvatarPic from "@/app/components/avatar";
-import LogoSVG from "@/app/assets/logos.tsx";
+import LogoSVG from "@/app/utils/logos";
 
 //------------------------------------------------------------
 const socials = [
     { name: "linkedin", url: "https://www.linkedin.com/in/gordonta/" },
     { name: "github", url: "https://github.com/imgta" },
 ];
+
 //------------------------------------------------------------
 export default function Hero() {
     return (
