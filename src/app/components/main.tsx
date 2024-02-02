@@ -8,6 +8,7 @@ import TechStack from "./skills";
 import Projects from "./projects";
 import Contact from "./contact";
 import Footer from "./footer";
+import AboutMe from "./about";
 
 //------------------------------------------------------------
 export default function Main() {
@@ -17,6 +18,7 @@ export default function Main() {
             <main className="isolate">
                 <div className="pb-32">
                     <Hero />
+                    <AboutMe />
                     <TechStack />
                     <Projects />
                     <Contact />
