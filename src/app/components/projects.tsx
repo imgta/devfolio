@@ -76,9 +76,9 @@ function linkOutSvg() {
                 <path d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"></path>
             </svg>
             <span className="font-medium group-hover:font-semibold pr-1">Demo</span>
-            <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+            <span className="flex justify-center items-center pl-[0.075rem]">
+                <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-red-600 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600"></span>
             </span>
         </>
     );
@@ -105,7 +105,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <p className="mt-4 text-lg leading-8 text-gray-600">
-                    The following stemmed from a combination of sheer curiosity, boyish enthusiasm, and voluntary challenges. Each project warranted their own case studies allowing me to further develop my skills and grow.
+                    The following projects stemmed from a combination of sheer curiosity, boyish enthusiasm, and voluntary challenges. Each project warranted their own case studies allowing me to further develop my skills and grow.
                 </p>
             </div>
 
@@ -198,32 +198,4 @@ export default function Projects() {
             </div>
         </>
     );
-}
-
-{
-    /* <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-    <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-        <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-            <img
-                src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                alt=""
-                className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-            />
-        </div>
-        <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-            <img
-                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
-                alt=""
-                className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-            />
-        </div>
-        <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-            <img
-                src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                alt=""
-                className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-            />
-        </div>
-    </div>
-</div> */
 }

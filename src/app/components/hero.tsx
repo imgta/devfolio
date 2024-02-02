@@ -10,8 +10,8 @@ const socials = [
 //------------------------------------------------------------
 export default function Hero() {
     return (
-        <div className="bg-white pb-10 pt-24 sm:pb-16 sm:pt-32 lg:pb-24">
-            <div className="pb-20 sm:pb-24 lg:pb-0">
+        <div className="bg-white pb-10 pt-24 sm:pb-16 sm:pt-32">
+            <div className="pb-20 sm:pb-4 lg:pb-0">
                 <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-x-4 gap-y-10 px-6 sm:gap-y-8 lg:px-8 lg:flex-row lg:items-stretch">
                     <div className="w-full max-w-2xl lg:max-w-none lg:flex-auto lg:px-16 lg:py-10 lg:pr-0 lg:pl-[14rem]">
                         <div className="group text-[2.4rem] font-bold text-gray-900">
