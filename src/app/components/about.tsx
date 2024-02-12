@@ -110,7 +110,7 @@ export default function AboutMe() {
                                     {about.roles.map((role) => (
                                         <div key={role.title} className="relative font-semibold text-gray-700">
                                             <div className={`absolute left-0 transform -translate-x-full ${expand? "block" : "hidden"}`}>
-                                                <span className="text-gray-600 font-mono whitespace-nowrap pr-2 max-sm:text-xs max-sm:pr-3">
+                                                <span className="text-gray-600 font-mono font-medium whitespace-nowrap pr-2 max-sm:text-xs max-sm:pr-3">
                                                     {about.name === "Biotech" ?
                                                     role.start && role.end && role.start === role.end
                                                         ? `${role.start}`
