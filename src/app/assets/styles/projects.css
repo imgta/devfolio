@@ -1,6 +1,6 @@
 .project img.webp {
     transform: translateY(0%);
-    transition: transform 8s ease-in-out;
+    transition: transform 9s ease-in-out;
     object-fit: cover;
 }
 

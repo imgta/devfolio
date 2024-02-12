@@ -80,49 +80,47 @@ export default function TechStack() {
     };
 
     return (
-        <>
-            <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-14">
-                <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
-                    <div className="header-con inline-block group-hover:hidden">
-                        <h1 className="header-text">
-                            Tech Stack
-                        </h1>
-                    </div>
-                    <div className="typed-con hidden group-hover:inline-block">
-                        <span className="typed">Frameworks and Languages</span>
-                        <span className="blinking">_</span>
-                    </div>
+        <div id="skills" className="heading mx-auto mt-4 max-w-4xl px-6 lg:px-8 pb-16">
+            <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
+                <div className="header-con inline-block group-hover:hidden">
+                    <h1 className="header-text">
+                        Tech Stack
+                    </h1>
                 </div>
-                <div className="flex justify-center pt-10">
-                    <ul
-                        role="list"
-                        className="grid grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8"
-                    >
-                        {skills.map((name, index) => {
-                            const { scale, opacity } = getSkillGroup(name);
-                            const skillUrl = skillUrls[name];
-
-                            return (
-                                <li key={index} className="relative bg-white">
-                                    <a
-                                        href={skillUrl}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onMouseEnter={() => mouseEnter(name)}
-                                        onMouseLeave={mouseLeave}
-                                        className={`group flex justify-center hover:scale-125 ${scale} ${opacity}`}
-                                    >
-                                        <LogoSVG name={name} wh={1.75} scale={1.25} />
-                                    </a>
-                                    <p className="pointer-events-none mt-2 block truncate text-xs sm:text-sm font-medium text-gray-900 text-center">
-                                        {name}
-                                    </p>
-                                </li>
-                            );
-                        })}
-                    </ul>
+                <div className="typed-con hidden group-hover:inline-block">
+                    <span className="typed">Frameworks and Languages</span>
+                    <span className="blinking">_</span>
                 </div>
             </div>
-        </>
+            <div className="flex justify-center pt-10">
+                <ul
+                    role="list"
+                    className="grid grid-cols-5 gap-x-4 gap-y-8 sm:gap-x-6 xl:gap-x-8"
+                >
+                    {skills.map((name, index) => {
+                        const { scale, opacity } = getSkillGroup(name);
+                        const skillUrl = skillUrls[name];
+
+                        return (
+                            <li key={index} className="relative bg-white">
+                                <a
+                                    href={skillUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onMouseEnter={() => mouseEnter(name)}
+                                    onMouseLeave={mouseLeave}
+                                    className={`group flex justify-center hover:scale-125 ${scale} ${opacity}`}
+                                >
+                                    <LogoSVG name={name} wh={1.75} scale={1.25} />
+                                </a>
+                                <p className="pointer-events-none mt-2 block truncate text-xs sm:text-sm font-medium text-gray-900 text-center">
+                                    {name}
+                                </p>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </div>
+        </div>
     );
 }
