@@ -143,7 +143,7 @@ export default function Projects() {
 
                 <div className="flex justify-between">
                     <span className="inline-flex text-base font-bold px-[0.1rem] text-gray-800 blur-[1.4px] hover:blur-0">
-                        {current.tagline} (in development)
+                        {current.tagline} (in progress)
                     </span>
                     <p className="inline-flex text-gray-600 text-sm font-mono tracking-tighter">
                         {current.start} {`\u2014`} {current.end}
