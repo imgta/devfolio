@@ -18,9 +18,9 @@ const current = {
     end: "present",
     href: "#secret",
     frames: ["Nuxt", "FastAPI", "Drizzle ORM", "Supabase"],
-    cloud: ["Cloudflare D1","Oracle Cloud", "Nginx", "Docker", "Stripe"],
+    cloud: ["Cloudflare D1","Oracle Cloud", "Docker", "Stripe"],
     languages: ["JavaScript", "TypeScript", "SQLite", "Python"],
-    description: "This project is currently held in private repositories.",
+    description: "Currently being held in private repositories until launch.",
     infos: [
         "Dockerized FastAPI backend, hosted on Oracle Cloud Instance, reverse proxied with NGINX",
         "Fine-tuned AI LLM with prompt function calling and extensive input/output trace logs",
@@ -197,7 +197,7 @@ export default function Projects() {
                                 <li key={idx}>
                                     <div className="flex min-w-0 flex-1 justify-between space-x-4">
                                         <div>
-                                            <p className="font-medium text-base text-gray-600 tracking-tight pl-6">
+                                            <p className="font-medium text-base text-gray-600 tracking-tight sm:pl-6">
                                                 - {info}
                                             </p>
                                         </div>
