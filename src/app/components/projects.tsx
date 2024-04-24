@@ -12,20 +12,21 @@ import backtabPng from "@/app/assets/images/backtab.png";
 //------------------------------------------------------------
 const current = {
     id: 1,
-    title: "Current Project",
-    tagline: "Stealth Project",
+    title: "Stealth Project (in progress)",
+    tagline: "",
     start: "01/2024",
     end: "present",
     href: "#secret",
     frames: ["Nuxt", "FastAPI", "Drizzle ORM", "Supabase"],
-    cloud: ["Cloudflare D1","Oracle Cloud", "Nginx", "Docker"],
+    cloud: ["Cloudflare D1","Oracle Cloud", "Nginx", "Docker", "Stripe"],
     languages: ["JavaScript", "TypeScript", "SQLite", "Python"],
-    description: "This project is currently private, but involves:",
+    description: "This project is currently held in private repositories.",
     infos: [
-        "FastAPI backend that is dockerized, hosted on an Oracle Cloud Instance, reverse proxied with NGINX",
-        "Cloudflare D1 serverless database managed with Cloudflare Workers and SQLite migration files",
-        "Edge interfacing with Nuxt server routes, simplified with Drizzle ORM, secured via Supabase and JWT",
-        "CI/CD through Docker Compose, GitHub Actions YAML, and shell scripts",
+        "Dockerized FastAPI backend, hosted on Oracle Cloud Instance, reverse proxied with NGINX",
+        "Fine-tuned AI LLM with prompt function calling and extensive input/output trace logs",
+        "Cloudflare D1 serverless database managed via Drizzle ORM and custom SQLite migrations",
+        "SSR and Supabase JWT-authentication within Nuxt server routes and middleware",
+        "CI/CD workflow through Docker Compose, GitHub Actions, and shell scripts",
     ],
 };
 
@@ -138,20 +139,17 @@ export default function Projects() {
             {/* CURRENT PROJECT */}
             <div className="mx-auto max-w-4xl items-center px-8">
                 <div className="flex justify-center items-center">
-                    <h2 className="text-3xl font-semibold">{current.title}</h2>
+                    <h2 className="text-3xl font-semibold blur-[1.825px] hover:blur-0 hover:cursor-not-allowed tracking-tight">{current.title}</h2>
                 </div>
 
-                <div className="flex justify-between">
-                    <span className="inline-flex text-base font-bold px-[0.1rem] text-gray-800 blur-[1.4px] hover:blur-0">
-                        {current.tagline} (in progress)
-                    </span>
+                <div className="flex justify-center pt-1">
                     <p className="inline-flex text-gray-600 text-sm font-mono tracking-tighter">
                         {current.start} {`\u2014`} {current.end}
                     </p>
                 </div>
 
                 {/* CURRENT STACK */}
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center pt-2">
                     <div className="mt-2 inline-flex group">
                         {current.frames.map((tech, idx) => (
                             <div
@@ -191,15 +189,15 @@ export default function Projects() {
                 </div>
 
                 {/* CURRENT INFO */}
-                <div className="mt-2 text-gray-700 font-medium text-base">
+                <div className="pt-4 text-gray-800 font-medium text-lg">
                     {current.description}
-                    <div className="flow-root">
+                    <div className="flow-root pt-1">
                         <ul role="list" className="-mb-8">
                             {current.infos.map((info, idx) => (
                                 <li key={idx}>
-                                    <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                    <div className="flex min-w-0 flex-1 justify-between space-x-4">
                                         <div>
-                                            <p className="font-medium text-sm text-gray-600 tracking-tight">
+                                            <p className="font-medium text-base text-gray-600 tracking-tight pl-6">
                                                 - {info}
                                             </p>
                                         </div>
