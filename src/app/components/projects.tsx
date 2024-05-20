@@ -22,11 +22,12 @@ const current = {
     languages: ["JavaScript", "TypeScript", "SQLite", "Python"],
     description: "Currently being held in private repositories until launch.",
     infos: [
-        "Dockerized FastAPI backend, hosted on Oracle Cloud Instance, reverse proxied with NGINX",
-        "Fine-tuned AI LLM with prompt function calling and extensive input/output trace logs",
-        "Cloudflare D1 serverless database managed via Drizzle ORM and custom SQLite migrations",
-        "SSR and Supabase JWT-authentication within Nuxt server routes and middleware",
-        "CI/CD workflow through Docker Compose, GitHub Actions, and shell scripts",
+        "Collaborated with a fellow developer to build a generative AI app for content creators using Nuxt with enhanced Server-Side Rendering (SSR) performance and serverless integrations",
+        "Architected and applied database schemas to Cloudflare D1's serverless SQLite databases, connected through Nuxt server routes leveraging Drizzle ORM and Zod schema validation",
+        "Implemented secure user authentication and middleware with Supabase and custom JWTs",
+        "Developed a Dockerized FastAPI backend on Oracle Cloud, configured with an NGINX reverse proxy",
+        "Refined AI prompts with function calling, established systematic input/output trace logs for debugging",
+        "Integrated Stripe for payment processing, set up MailerLite for targeted email campaigns, and incorporated FreshDesk for customer support ticketing",
     ],
 };
 
