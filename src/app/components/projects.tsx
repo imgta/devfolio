@@ -17,8 +17,8 @@ const current = {
     start: "01/2024",
     end: "present",
     href: "#secret",
-    frames: ["Nuxt", "FastAPI", "Drizzle ORM", "Supabase"],
-    cloud: ["Cloudflare D1", "Oracle Cloud", "Docker", "Stripe"],
+    frames: ["Nuxt", "FastAPI", "Drizzle", "Supabase"],
+    cloud: ["Cloudflare", "Oracle", "Docker", "Stripe"],
     languages: ["JavaScript", "TypeScript", "SQLite", "Python"],
     description: "Currently being held in private repositories until launch.",
     infos: [
@@ -35,7 +35,7 @@ const projects = [
     {
         id: 1,
         title: "Vialect",
-        tagline: "Multimedia Content Transformer",
+        tagline: "Multimedia Transformer",
         start: "11/2023",
         end: "12/2023",
         href: "#vialect",
@@ -65,7 +65,7 @@ const projects = [
     {
         id: 3,
         title: "backTAB",
-        tagline: "Group Receipts Tracking",
+        tagline: "Receipts Tracking",
         start: "06/2023",
         end: "07/2023",
         href: "#backtab",
@@ -134,12 +134,12 @@ export default function Projects() {
             </div>
 
             {/* CURRENT PROJECT */}
-            <div className="mx-auto max-w-4xl px-4">
+            <div className="mx-auto max-w-full lg:max-w-4xl">
 
-                <div className="justify-center mx-auto pl-2">
+                <div className="justify-center mx-auto px-4">
                     <span className="inline-flex text-base font-semibold text-gray-900">Current Project (private)</span>
                     <p className="text-gray-600 text-sm font-mono tracking-tighter">
-                        {current.start} &mdash; {current.end}
+                        {current.start}&mdash;{current.end}
                     </p>
 
                     <div className="justify-center items-center py-2">
@@ -167,8 +167,8 @@ export default function Projects() {
                 </div>
 
                 {/* CURRENT STACK */}
-                <div className="max-w-lg sm:max-w-3xl md:max-w-4xl mx-auto">
-                <div className="flex flex-col h-auto bg-[#1e1e1f] text-white font-mono rounded-xl">
+                <div className="max-w-full lg:max-w-4xl mx-auto">
+                <div className="flex flex-col h-auto bg-[#1e1e1f] text-white font-mono rounded-xl text-sm sm:text-base">
                     <div className="flex items-center h-8 px-3 bg-[#313132] rounded-t-xl">
                         <div className="h-3 w-3 mr-2 rounded-full bg-[#ff5d5a]"></div>
                         <div className="h-3 w-3 mr-2 rounded-full bg-[#f5c350]"></div>
@@ -176,50 +176,51 @@ export default function Projects() {
                         <div className="mx-auto pr-14 text-sm">imgta@latest-project</div>
                     </div>
 
-                    <div className="flex-1 p-2 leading-[1.3rem]">
-                            <div>First start: Mon Jan 08 11:07:23 in private</div>
-                            <div><span className="text-[#6366f1f2]">~</span> cd stealth</div>
-                            <div><span className="text-[#6366f1f2]">~/stealth</span> ls -a</div>
+                    <div className="flex-1 p-1 sm:p-2 leading-[1.3rem]">
+                        <div>First start: Mon Jan 08 11:07:23 in private</div>
+                        <div><span className="text-[#6366f1f2]">~</span> cd stealth</div>
+                        <div><span className="text-[#6366f1f2]">~/stealth</span> ls -a</div>
 
-                            <div className="grid grid-cols-3 gap-x-6 sm:gap-x-8 sm:grid-cols-4">
-                                <div className="order-first">.</div>
-                                <div className="text-[#1ad878] sm:order-1 order-9">Cloudflare.d1</div>
-                                <div className="text-[#1ad878] sm:order-2 order-7">FastAPI.py</div>
-                                <div className="sm:order-3 order-5">README.md</div>
-                                <div className="sm:order-4 order-3">..</div>
-                                <div className="sm:order-5 order-1">Docker.yml</div>
-                                <div className="text-[#1ad878] sm:order-6 order-10">Nuxt-3.vue</div>
-                                <div className="text-[#1ad878] sm:order-7 order-8">Stripe.event</div>
-                                <div className="text-[#1ad878] sm:order-8 order-6">.2-Devs.env</div>
-                                <div className="sm:order-9 order-4">DrizzleORM.sql</div>
-                                <div className="sm:order-10 order-2">OracleCloud.ssh</div>
-                                <div className="order-last">Supabase.auth</div>
-                            </div>
+                        <div className="grid grid-cols-3 gap-x-3 sm:gap-x-8 sm:grid-cols-4">
+                            <div className="order-first">.</div>
+                            <div className="text-[#1ad878] sm:order-1 order-9">Cloudflare.d1</div>
+                            <div className="text-[#1ad878] sm:order-2 order-7">FastAPI.py</div>
+                            <div className="sm:order-3 order-5">README.md</div>
+                            <div className="sm:order-4 order-3">..</div>
+                            <div className="sm:order-5 order-1">Docker.yml</div>
+                            <div className="text-[#1ad878] sm:order-6 order-10">Nuxt-3.vue</div>
+                            <div className="text-[#1ad878] sm:order-7 order-8">Stripe.event</div>
+                            <div className="text-[#1ad878] sm:order-8 order-6">.2-Devs.env</div>
+                            <div className="sm:order-9 order-4">DrizzleORM.sql</div>
+                            <div className="sm:order-10 order-2">OracleCloud.ssh</div>
+                            <div className="order-last">Supabase.auth</div>
+                        </div>
 
-                            <div><span className="text-[#6366f1f2]">~/stealth</span> cat README.md</div>
-                            <div>
-                                # Stealth Project in progress...<br/>
-                                &gt; Currently being held in private git repos until launch<br/><br/>
-                                ## TODOS Roadmap 2024<br/>
-                                - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
-                                - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
-                                - [x] Designed complete and thougthful schemas for our Cloudflare D1 serverless databases<br/>
-                                - [x] Set up protective database-schema interfacing with Drizzle ORM and Zod validation<br/>
-                                - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br/>
-                                - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br/>
-                                - [x] Configured an NGINX reverse proxy to securely handle backend-frontend requests<br/>
-                                - [x] Improved AI prompt reliability/consistency with fine-tuning and function calling<br/>
-                                - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
-                                - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
-                                - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br/>
-                                - [ ] Launch
-                            </div>
-                            <div>
-                                <div className="flex">
+                        <div><span className="text-[#6366f1f2]">~/stealth</span> cat README.md</div>
+                        <div>
+                            # Stealth Project in progress...<br/>
+                            &gt; Currently being held in private git repos until launch<br/><br/>
+                            ## TODOS Roadmap 2024<br/>
+                            - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
+                            - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
+                            - [x] Designed complete and thougthful schemas for our Cloudflare D1 serverless databases<br/>
+                            - [x] Set up protective database-schema interfacing with Drizzle ORM and Zod validation<br/>
+                            - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br/>
+                            - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br/>
+                            - [x] Configured an NGINX reverse proxy to securely handle backend-frontend requests<br/>
+                            - [x] Improved AI prompt reliability/consistency with fine-tuning and function calling<br/>
+                            - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
+                            - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
+                            - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br/>
+                            - [ ] Launch
+                        </div>
+                        <div>
+                            <div className="flex">
                                 <span className="text-[#6366f1f2]">~/stealth </span>
                                 <span className="terminal_cursor ml-2 mt-0.5"></span>
-                                </div>
                             </div>
+                            <br />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,12 +229,9 @@ export default function Projects() {
             <div className="mt-16 mx-auto max-w-6xl items-center lg:flex px-8">
                 <div className="mx-auto grid w-full grid-cols-1 lg:mx-0">
                     {projects.map((proj, index) => (
-                        <div
-                            key={proj.id}
-                            className={`flex flex-col lg:flex-row ${
-                                index % 2 === 0 ? "" : "lg:flex-row-reverse"
-                            } gap-8 lg:gap-12 my-12`}
-                        >
+                        <div key={proj.id}
+                            className={`flex flex-col lg:flex-row gap-8 lg:gap-12 my-12
+                            ${index % 2 === 0 ? "" : "lg:flex-row-reverse"}`}>
                             {/* PROJECT INFO */}
                             <div className="lg:flex-1">
                                 <div className="flex justify-between items-center">
@@ -243,24 +241,14 @@ export default function Projects() {
                                     <div className="flex">
                                         <div className="px-4">
                                             {proj.demo && (
-                                                <a
-                                                    href={proj.demo}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="flex items-center group"
-                                                >
+                                                <a href={proj.demo} target="_blank" rel="noopener noreferrer" className="flex items-center group">
                                                     {linkOutSvg()}
                                                 </a>
                                             )}
                                         </div>
                                         <div>
                                             {proj.repo && (
-                                                <a
-                                                    href={proj.repo}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className="flex items-center hover:scale-125"
-                                                >
+                                                <a href={proj.repo} target="_blank" rel="noopener noreferrer" className="flex items-center hover:scale-125">
                                                     {getRepoLogo(proj.repo)}
                                                 </a>
                                             )}
@@ -268,26 +256,19 @@ export default function Projects() {
                                     </div>
                                 </div>
 
-                                <div className="flex justify-between">
-                                    <span className="inline-flex text-base font-medium px-[0.1rem] text-gray-600">
+                                <div className="flex justify-between items-end tracking-tighter">
+                                    <span className="inline-flex text-base font-medium px-[0.1rem] text-gray-600 ">
                                         {proj.tagline}
                                     </span>
-                                    <p className="inline-flex text-gray-600 text-sm font-mono tracking-tighter">
-                                        {proj.start} {`\u2014`} {proj.end}
+                                    <p className="inline-flex text-gray-600 text-sm font-mono">
+                                        {proj.start}&mdash;{proj.end}
                                     </p>
                                 </div>
                                 {/* TECH STACK */}
                                 <div className="mt-2 inline-flex group">
                                     {proj.stack.map((tech, techIndex) => (
-                                        <div
-                                            key={techIndex}
-                                            className="flex items-center justify-start px-1 h-full w-full hover:scale-110 text-center"
-                                        >
-                                            <LogoSVG
-                                                name={tech}
-                                                wh={1.5}
-                                                scale={1}
-                                            />
+                                        <div key={techIndex} className="flex items-center justify-start px-1 h-full w-full hover:scale-110 text-center">
+                                            <LogoSVG name={tech} wh={1.5} scale={1}/>
                                             <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-0.5">
                                                 {tech}
                                             </span>
@@ -302,25 +283,18 @@ export default function Projects() {
 
                             {/* PROJECT IMAGE */}
                             <div className="project lg:flex-1 overflow-hidden h-[420px]">
-                                <div
-                                    onMouseEnter={() =>
-                                        setHoverProjectId(proj.id)
-                                    }
-                                    onMouseLeave={() => setHoverProjectId(null)}
-                                >
+                                <div onMouseEnter={ () => setHoverProjectId(proj.id) }
+                                onMouseLeave={ () => setHoverProjectId(null) }>
                                     <Image
-                                        src={
-                                            hoverProjectId === proj.id
-                                                ? proj.imageWebp
-                                                : proj.imagePng
-                                        }
-                                        alt={`${proj.title} project image`}
-                                        className={
-                                            hoverProjectId === proj.id
-                                                ? "webp rounded-2xl object-cover"
-                                                : "rounded-2xl object-cover"
-                                        }
-                                    />
+                                    src={ hoverProjectId === proj.id
+                                        ? proj.imageWebp
+                                        : proj.imagePng
+                                    }
+                                    alt={`${proj.title} project image`}
+                                    className={ hoverProjectId === proj.id
+                                        ? "webp rounded-2xl object-cover"
+                                        : "rounded-2xl object-cover"
+                                    }/>
                                 </div>
                             </div>
                         </div>

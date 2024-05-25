@@ -36,19 +36,9 @@ export default function Hero() {
                                 {/* SOCIALS */}
                                 <div className="flex">
                                     {socials.map((social, index) => (
-                                        <a
-                                            key={index}
-                                            href={social.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="mr-4"
-                                        >
+                                        <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="mr-4">
                                             <div className="hover:scale-125">
-                                                <LogoSVG
-                                                    name={social.name}
-                                                    wh={1.5}
-                                                    scale={1}
-                                                />
+                                                <LogoSVG name={social.name} wh={1.5} scale={1} />
                                             </div>
                                         </a>
                                     ))}
