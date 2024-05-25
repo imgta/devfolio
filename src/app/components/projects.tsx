@@ -114,7 +114,7 @@ export default function Projects() {
 
     return (
         <>
-            <div id="projects" className="heading mx-auto justify-center items-center max-w-4xl mt-4 px-8 pb-10">
+            <div id="projects" className="heading mx-auto justify-center items-center max-w-4xl mt-4 px-6 pb-10">
                 <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
                     <div className="header-con inline-block group-hover:hidden">
                         <h1 className="header-text">Projects</h1>
@@ -126,15 +126,15 @@ export default function Projects() {
                         <span className="blinking">_</span>
                     </div>
                 </div>
-                <p className="mt-4 text-lg leading-8 text-gray-600 px-2">
+                <p className="mt-4 text-lg leading-8 text-gray-600">
                     The following projects stemmed from a combination of sheer
-                    curiosity, boyish enthusiasm, and voluntary challenges. I enjoy taking on worth-while
+                    curiosity, boyish enthusiasm, and voluntary challenges. I enjoy worthwhile
                     projects that warrant exploratory case studies in order to succeed.
                 </p>
             </div>
 
             {/* CURRENT PROJECT */}
-            <div className="mx-auto max-w-4xl px-8">
+            <div className="mx-auto max-w-4xl px-4">
 
                 <div className="justify-center mx-auto pl-2">
                     <span className="inline-flex text-base font-semibold text-gray-900">Current Project (private)</span>
@@ -200,7 +200,7 @@ export default function Projects() {
                             <div>
                                 # Stealth Project in progress...<br/>
                                 &gt; Currently being held in private git repos until launch<br/><br/>
-                                ## Current Roadmap<br/>
+                                ## TODOS Roadmap 2024<br/>
                                 - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
                                 - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
                                 - [x] Designed complete and thougthful schemas for our Cloudflare D1 serverless databases<br/>
