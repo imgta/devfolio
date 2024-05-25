@@ -63,15 +63,10 @@ const abouts = [
 //------------------------------------------------------------
 export default function AboutMe() {
     const [expand, setExpand] = useState(false);
-    const expandToggle = () => {
-        setExpand(!expand);
-    };
+    const expandToggle = () => { setExpand(!expand); };
     return (
         <>
-            <div
-                id="about"
-                className="heading mx-auto my-4 max-w-4xl px-6 lg:px-8"
-            >
+            <div id="about" className="heading mx-auto my-4 max-w-4xl px-6 lg:px-8">
                 <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
                     <div className="header-con inline-block group-hover:hidden">
                         <h1 className="header-text">About Me</h1>
@@ -82,23 +77,23 @@ export default function AboutMe() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center max-w-7xl py-4 pb-16 mx-auto">
-                <div className="px-8 max-sm:pr-16">
-                    <div className="grid grid-cols-1 gap-x-1 gap-y-8 lg:grid-cols-2">
+            <div className="flex justify-center max-w-5xl py-4 pb-16 mx-auto">
+                <div className="sm:px-8">
+                    <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2">
                         {abouts.map((about) => (
                             <div
                                 key={about.name}
-                                className="flex items-start"
+                                className="flex items-start lg:justify-center"
                             >
-                                <div className="relative h-7 w-7 rounded-sm items-center bg-white fill-indigo-600">
+                                <div className="mx-7 relative h-7 w-7 rounded-sm items-center bg-white fill-indigo-600">
                                     {about.icon}
                                 </div>
-                                <div className="ml-[1.65rem]">
+                                <div>
                                     <h3 className="text-lg font-bold text-gray-900">
                                         {about.name}
                                     </h3>
                                     <div
-                                        className={`mt-1 text-[0.785rem] sm:text-sm ${about.name === "Biotech"
+                                        className={`mt-0.5 text-[0.785rem] sm:text-sm ${about.name === "Biotech"
                                         ? `hover:cursor-pointer ${expand
                                             ? ""
                                             : "line-clamp-2"}`

@@ -21,9 +21,25 @@ export default function NavBar() {
                 className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
                 aria-label="Global"
             >
+                {/* <div className="hidden sm:flex sm:flex-1">
+                    <a className="group font-medium tracking-tight hover:cursor-pointer" onClick={scrollTop}>
+                        <code className="font-bold group-hover:text-indigo-700 ">
+                            <span className="group-hover:text-indigo-700 group-hover:rotate-45 group-hover:transition-none">&gt;</span>_ </code>
+                            <span className="group-hover:text-indigo-700">imgta</span>
+                    </a>
+                </div> */}
                 <div className="hidden sm:flex sm:flex-1">
-                    <span className="font-semibold hover:cursor-pointer" onClick={scrollTop}>imgta.dev</span>
+                    <a className="flex group font-medium hover:cursor-pointer" onClick={scrollTop}>
+                        <code className="font-medium group-hover:text-indigo-700 flex items-center ">
+                            <span className="font-semibold group-hover:-rotate-90 group-hover:scale-110 inline-block transition-transform duration-300">
+                                &gt;
+                            </span>
+                            _
+                        </code>
+                        <span className="group-hover:text-indigo-700 pl-1">imgta</span>
+                    </a>
                 </div>
+                
                 <div className="flex nav-link gap-x-12">
                     {navigation.map((item) => (
                         <a
@@ -43,7 +59,7 @@ export default function NavBar() {
                         className="text-sm font-semibold leading-6 text-gray-900 group"
                     >
                         <svg className="hidden group-hover:inline-block w-[1.3rem] h-[1.3rem] pr-0.5 mb-0.5 fill-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M211.48,35.32l-130.25-23A20,20,0,0,0,58.05,28.54l-29.75,169a20,20,0,0,0,16.22,23.16l130.25,23h0a20.1,20.1,0,0,0,3.52.31A20,20,0,0,0,198,227.46l29.75-169A20,20,0,0,0,211.48,35.32ZM175,219.36,52.63,197.75,81,36.64,203.37,58.25ZM91.9,67a12,12,0,0,1,13.9-9.73L173,69.14A12,12,0,0,1,171,93a12.59,12.59,0,0,1-2.1-.18L101.63,80.9A12,12,0,0,1,91.9,67ZM85,106.39a12,12,0,0,1,13.91-9.73l67.22,11.88A12,12,0,0,1,164,132.35a12.5,12.5,0,0,1-2.1-.18L94.69,120.29A12,12,0,0,1,85,106.39ZM78,145.78a12,12,0,0,1,13.9-9.73L125.54,142a12,12,0,0,1-2.07,23.82,11.63,11.63,0,0,1-2.1-.19l-33.61-5.93A12,12,0,0,1,78,145.78Z"></path></svg>
-                        <span className="group-hover:font-bold">Resume</span>
+                        <span className="group-hover:font-bold ">Resume</span>
                     </a>
                 </div>
             </nav>

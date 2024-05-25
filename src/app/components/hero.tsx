@@ -10,10 +10,10 @@ const socials = [
 //------------------------------------------------------------
 export default function Hero() {
     return (
-        <div className="pb-10 pt-24 sm:pb-16 sm:pt-32 max-sm:px-4">
-            <div className="pb-20 sm:pb-4 lg:pb-0">
-                <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-x-4 gap-y-10 px-6 sm:gap-y-8 lg:px-8 lg:flex-row lg:items-stretch">
-                    <div className="w-full max-w-2xl lg:max-w-none lg:flex-auto lg:px-16 lg:py-10 lg:pr-0 lg:pl-[14rem]">
+        <div className="pb-12 pt-24 sm:pb-16 sm:pt-32 max-sm:px-4">
+            <div className="sm:pb-4 lg:pb-0">
+                <div className="mx-auto flex max-w-5xl flex-col-reverse items-center gap-x-4 gap-y-10 px-6 sm:gap-y-8 lg:px-8 lg:flex-row">
+                    <div className="max-w-3xl lg:max-w-3xl lg:flex-auto lg:py-10 px-4">
                         <div className="group text-[2.4rem] font-bold text-gray-900">
                             <div className="header-con inline-block group-hover:hidden">
                                 <h1 className="header-text">
@@ -28,8 +28,8 @@ export default function Hero() {
                         <figure className="relative isolate">
                             <blockquote className="text-lg text-gray-600">
                                 <p>
-                                    I&apos;m Gordon, your Full Stack web
-                                    development partner, based in Boston, MA.
+                                    Hi there! I&apos;m Gordon, a Full-Stack Software Engineer
+                                    based in Boston, MA.
                                 </p>
                             </blockquote>
                             <figcaption className="mt-8 text-base">
