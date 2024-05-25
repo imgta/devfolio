@@ -200,10 +200,10 @@ export default function Projects() {
                             <div>
                                 # Stealth Project in progress...<br/>
                                 &gt; Currently being held in private git repos until launch<br/><br/>
-                                ## Roadmap<br/>
+                                ## Current Roadmap<br/>
                                 - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
                                 - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
-                                - [x] Designed complete and thoughful schemas for our Cloudflare D1 serverless databases<br/>
+                                - [x] Designed complete and thougthful schemas for our Cloudflare D1 serverless databases<br/>
                                 - [x] Set up protective database-schema interfacing with Drizzle ORM and Zod validation<br/>
                                 - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br/>
                                 - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br/>
@@ -211,7 +211,8 @@ export default function Projects() {
                                 - [x] Improved AI prompt reliability/consistency with fine-tuning and function calling<br/>
                                 - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
                                 - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
-                                - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing
+                                - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br/>
+                                - [ ] Launch
                             </div>
                             <div>
                                 <div className="flex">
