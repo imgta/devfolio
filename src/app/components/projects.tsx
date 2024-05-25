@@ -12,13 +12,13 @@ import backtabPng from "@/app/assets/images/backtab.png";
 //------------------------------------------------------------
 const current = {
     id: 1,
-    title: "Stealth Project (in progress)",
+    title: "Current Project (stealth)",
     tagline: "",
     start: "01/2024",
     end: "present",
     href: "#secret",
     frames: ["Nuxt", "FastAPI", "Drizzle ORM", "Supabase"],
-    cloud: ["Cloudflare D1","Oracle Cloud", "Docker", "Stripe"],
+    cloud: ["Cloudflare D1", "Oracle Cloud", "Docker", "Stripe"],
     languages: ["JavaScript", "TypeScript", "SQLite", "Python"],
     description: "Currently being held in private repositories until launch.",
     infos: [
@@ -114,10 +114,7 @@ export default function Projects() {
 
     return (
         <>
-            <div
-                id="projects"
-                className="heading mx-auto justify-center items-center max-w-5xl mt-4 px-8 pb-10"
-            >
+            <div id="projects" className="heading mx-auto justify-center items-center max-w-4xl mt-4 px-8 pb-10">
                 <div className="group text-[2.4rem] font-bold text-gray-900 text-center">
                     <div className="header-con inline-block group-hover:hidden">
                         <h1 className="header-text">Projects</h1>
@@ -129,88 +126,105 @@ export default function Projects() {
                         <span className="blinking">_</span>
                     </div>
                 </div>
-                <p className="mt-4 text-lg leading-8 text-gray-600">
+                <p className="mt-4 text-lg leading-8 text-gray-600 px-2">
                     The following projects stemmed from a combination of sheer
-                    curiosity, boyish enthusiasm, and voluntary challenges. Each
-                    project warranted their own case studies allowing me to
-                    further develop my skills and grow.
+                    curiosity, boyish enthusiasm, and voluntary challenges. I enjoy taking on worth-while
+                    projects that warrant exploratory case studies in order to succeed.
                 </p>
             </div>
 
             {/* CURRENT PROJECT */}
-            <div className="mx-auto max-w-4xl items-center px-8">
-                <div className="flex justify-center items-center">
-                    <h2 className="text-3xl font-semibold blur-[1.825px] hover:blur-0 hover:cursor-not-allowed tracking-tight">{current.title}</h2>
-                </div>
+            <div className="mx-auto max-w-4xl px-8">
 
-                <div className="flex justify-center pt-1">
-                    <p className="inline-flex text-gray-600 text-sm font-mono tracking-tighter">
-                        {current.start} {`\u2014`} {current.end}
+                <div className="justify-center mx-auto pl-2">
+                    <span className="inline-flex text-base font-semibold text-gray-900">Current Project (private)</span>
+                    <p className="text-gray-600 text-sm font-mono tracking-tighter">
+                        {current.start} &mdash; {current.end}
                     </p>
+
+                    <div className="justify-center items-center py-2">
+                        <div className="inline-flex group space-x-3">
+                            {current.frames.map((tech, idx) => (
+                                <div key={idx} className="flex items-center justify-start h-full w-full hover:scale-110 text-center">
+                                    <LogoSVG name={tech.split(" ")[0]} wh={1.5} scale={1}/>
+                                    <span className="max-w-xs whitespace-nowrap transition-all duration-300 ease-in-out group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-1">
+                                        {tech}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="inline-flex group space-x-3 lg:ml-3">
+                            {current.cloud.map((tech, idx) => (
+                                <div key={idx} className="flex items-center justify-start h-full w-full hover:scale-110 text-center">
+                                    <LogoSVG name={tech.split(" ")[0]} wh={1.5} scale={1}/>
+                                    <span className="max-w-xs whitespace-nowrap transition-all duration-300 ease-in-out group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-1">
+                                        {tech}
+                                    </span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
                 {/* CURRENT STACK */}
-                <div className="flex justify-center items-center pt-2">
-                    <div className="mt-2 inline-flex group">
-                        {current.frames.map((tech, idx) => (
-                            <div
-                                key={idx}
-                                className="flex items-center justify-start px-1.5 h-full w-full hover:scale-110 text-center"
-                            >
-                                <LogoSVG
-                                    name={tech.split(" ")[0]}
-                                    wh={1.5}
-                                    scale={1}
-                                />
-                                <span className="max-w-xs whitespace-nowrap transition-all duration-300 ease-in-out group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-1">
-                                    {tech}
-                                </span>
-                            </div>
-                        ))}
+                <div className="max-w-lg sm:max-w-3xl md:max-w-4xl mx-auto">
+                <div className="flex flex-col h-auto bg-[#1e1e1f] text-white font-mono rounded-xl">
+                    <div className="flex items-center h-8 px-3 bg-[#313132] rounded-t-xl">
+                        <div className="h-3 w-3 mr-2 rounded-full bg-[#ff5d5a]"></div>
+                        <div className="h-3 w-3 mr-2 rounded-full bg-[#f5c350]"></div>
+                        <div className="h-3 w-3 rounded-full bg-[#65cd57]"></div>
+                        <div className="mx-auto pr-14 text-sm">imgta@latest-project</div>
                     </div>
-                </div>
-                <div className="flex justify-center items-center">
-                    <div className="mt-1 inline-flex group">
-                        {current.cloud.map((tech, idx) => (
-                            <div
-                                key={idx}
-                                className="flex items-center justify-start px-1.5 h-full w-full hover:scale-110 text-center"
-                            >
-                                <LogoSVG
-                                    name={tech.split(" ")[0]}
-                                    wh={1.5}
-                                    scale={1}
-                                />
-                                <span className="max-w-xs whitespace-nowrap transition-all duration-300 ease-in-out group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-1">
-                                    {tech}
-                                </span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
 
-                {/* CURRENT INFO */}
-                <div className="pt-4 text-gray-800 font-medium text-lg">
-                    {current.description}
-                    <div className="flow-root pt-1">
-                        <ul role="list" className="-mb-8">
-                            {current.infos.map((info, idx) => (
-                                <li key={idx}>
-                                    <div className="flex min-w-0 flex-1 justify-between space-x-4">
-                                        <div>
-                                            <p className="font-medium text-base text-gray-600 tracking-tight sm:pl-6">
-                                                - {info}
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
+                    <div className="flex-1 p-2 leading-[1.3rem]">
+                            <div>First start: Mon Jan 08 11:07:23 in private</div>
+                            <div><span className="text-[#6366f1f2]">~</span> cd stealth</div>
+                            <div><span className="text-[#6366f1f2]">~/stealth</span> ls -a</div>
+
+                            <div className="grid grid-cols-3 gap-x-6 sm:gap-x-8 sm:grid-cols-4">
+                                <div className="order-first">.</div>
+                                <div className="text-[#1ad878] sm:order-1 order-9">Cloudflare.d1</div>
+                                <div className="text-[#1ad878] sm:order-2 order-7">FastAPI.py</div>
+                                <div className="sm:order-3 order-5">README.md</div>
+                                <div className="sm:order-4 order-3">..</div>
+                                <div className="sm:order-5 order-1">Docker.yml</div>
+                                <div className="text-[#1ad878] sm:order-6 order-10">Nuxt-3.vue</div>
+                                <div className="text-[#1ad878] sm:order-7 order-8">Stripe.event</div>
+                                <div className="text-[#1ad878] sm:order-8 order-6">.2-Devs.env</div>
+                                <div className="sm:order-9 order-4">DrizzleORM.sql</div>
+                                <div className="sm:order-10 order-2">OracleCloud.ssh</div>
+                                <div className="order-last">Supabase.auth</div>
+                            </div>
+
+                            <div><span className="text-[#6366f1f2]">~/stealth</span> cat README.md</div>
+                            <div>
+                                # Stealth Project in progress...<br/>
+                                &gt; Currently being held in private git repos until launch<br/><br/>
+                                ## Roadmap<br/>
+                                - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
+                                - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
+                                - [x] Designed complete and thoughful schemas for our Cloudflare D1 serverless databases<br/>
+                                - [x] Set up protective database-schema interfacing with Drizzle ORM and Zod validation<br/>
+                                - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br/>
+                                - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br/>
+                                - [x] Configured an NGINX reverse proxy to securely handle backend-frontend requests<br/>
+                                - [x] Improved AI prompt reliability/consistency with fine-tuning and function calling<br/>
+                                - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
+                                - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
+                                - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing
+                            </div>
+                            <div>
+                                <div className="flex">
+                                <span className="text-[#6366f1f2]">~/stealth </span>
+                                <span className="terminal_cursor ml-2 mt-0.5"></span>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
+            </div>
 
-            <div className="mt-10 mx-auto max-w-7xl items-center lg:flex px-8">
+            <div className="mt-16 mx-auto max-w-6xl items-center lg:flex px-8">
                 <div className="mx-auto grid w-full grid-cols-1 lg:mx-0">
                     {projects.map((proj, index) => (
                         <div
