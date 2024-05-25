@@ -192,7 +192,7 @@ export default function Projects() {
                             <div className="text-[#1ad878] sm:order-7 order-8">Stripe.event</div>
                             <div className="text-[#1ad878] sm:order-8 order-6">.2-Devs.env</div>
                             <div className="sm:order-9 order-4">DrizzleORM.sql</div>
-                            <div className="sm:order-10 order-2">OracleCloud.ssh</div>
+                            <div className="sm:order-10 order-2">Oracle.ssh</div>
                             <div className="order-last">Supabase.auth</div>
                         </div>
 
