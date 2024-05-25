@@ -1,4 +1,5 @@
-.header-con, .typed-con {
+.header-con,
+.typed-con {
   line-height: 1.2;
   letter-spacing: -0.025em;
   vertical-align: baseline;
@@ -25,10 +26,44 @@
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  to { visibility: hidden; }
+  to {
+    visibility: hidden;
+  }
+}
+
+.terminal_cursor {
+  display: block;
+  height: 16px;
+  width: 5px;
+  animation: term_blink 1200ms linear infinite;
+}
+@keyframes term_blink {
+  0% {
+    background: #ffffff;
+  }
+
+  49% {
+    background: #ffffff;
+  }
+
+  60% {
+    background: transparent;
+  }
+
+  99% {
+    background: transparent;
+  }
+
+  100% {
+    background: #ffffff;
+  }
 }
