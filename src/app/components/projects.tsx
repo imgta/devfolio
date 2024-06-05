@@ -239,13 +239,13 @@ export default function Projects() {
                                         {proj.title}
                                     </h2>
                                     <div className="flex">
-                                        <div className="px-4">
+                                        {/* <div className="px-4">
                                             {proj.demo && (
                                                 <a href={proj.demo} target="_blank" rel="noopener noreferrer" className="flex items-center group">
                                                     {linkOutSvg()}
                                                 </a>
                                             )}
-                                        </div>
+                                        </div> */}
                                         <div>
                                             {proj.repo && (
                                                 <a href={proj.repo} target="_blank" rel="noopener noreferrer" className="flex items-center hover:scale-125">
