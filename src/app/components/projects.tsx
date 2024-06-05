@@ -59,7 +59,7 @@ const projects = [
         stack: ["Nuxt", "Vue", "Strapi", "Cloudflare", "Supabase", "Render"],
         description:
             "playTrace is a full-stack, social events hosting app that aims to electrify social circles and allow communities to be explored, candidly, through customizable event pages.",
-        demo: "https://playtrace.app",
+        // demo: "https://playtrace.app",
         repo: "https://github.com/imgta/playtrace-nuxt",
     },
     {
