@@ -8,15 +8,17 @@ import vialect from "@/app/assets/images/vialect.webp";
 import vialectPng from "@/app/assets/images/vialect.png";
 import backtab from "@/app/assets/images/backtab.webp";
 import backtabPng from "@/app/assets/images/backtab.png";
+import videoblogaiSvg from "@/app/assets/images/logo-min.svg"
 
 //------------------------------------------------------------
 const current = {
     id: 1,
-    title: "Current Project (stealth)",
+    title: "Video Blog AI",
     tagline: "",
     start: "01/2024",
-    end: "present",
-    href: "#secret",
+    end: "06/2024",
+    href: "https://videoblog.ai/",
+    stack: ["Nuxt", "FastAPI", "Cloudflare", "Oracle", "Docker", "Stripe", "Drizzle", "Supabase"],
     frames: ["Nuxt", "FastAPI", "Drizzle", "Supabase"],
     cloud: ["Cloudflare", "Oracle", "Docker", "Stripe"],
     languages: ["JavaScript", "TypeScript", "SQLite", "Python"],
@@ -137,32 +139,31 @@ export default function Projects() {
             <div className="mx-auto max-w-full lg:max-w-4xl">
 
                 <div className="justify-center mx-auto px-4">
-                    <span className="inline-flex text-base font-semibold text-gray-900">Current Project (private)</span>
-                    <p className="text-gray-600 text-sm font-mono tracking-tighter">
-                        {current.start}&mdash;{current.end}
-                    </p>
+                    <div className="flex justify-between items-center">
+                        <div>
+                            <a href={current.href} target="_blank">
+                                <Image className="h-10 w-auto" src={videoblogaiSvg} alt="Video Blog AI" />
+                            </a>
+                        </div>
+                        <div>
+                            <p className="text-gray-600 text-sm font-mono tracking-tighter">
+                                {current.start}&mdash;{current.end}
+                            </p>
+                        </div>
+                    </div>
 
                     <div className="justify-center items-center py-2">
                         <div className="inline-flex group space-x-3">
-                            {current.frames.map((tech, idx) => (
+                            {current.stack.map((tech, idx) => (
                                 <div key={idx} className="flex items-center justify-start h-full w-full hover:scale-110 text-center">
                                     <LogoSVG name={tech.split(" ")[0]} wh={1.5} scale={1}/>
-                                    <span className="max-w-xs whitespace-nowrap transition-all duration-300 ease-in-out group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-1">
+                                    <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-0.5">
                                         {tech}
                                     </span>
                                 </div>
                             ))}
                         </div>
-                        <div className="inline-flex group space-x-3 lg:ml-3">
-                            {current.cloud.map((tech, idx) => (
-                                <div key={idx} className="flex items-center justify-start h-full w-full hover:scale-110 text-center">
-                                    <LogoSVG name={tech.split(" ")[0]} wh={1.5} scale={1}/>
-                                    <span className="max-w-xs whitespace-nowrap transition-all duration-300 ease-in-out group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-1">
-                                        {tech}
-                                    </span>
-                                </div>
-                            ))}
-                        </div>
+
                     </div>
                 </div>
 
@@ -199,7 +200,7 @@ export default function Projects() {
                         <div><span className="text-[#6366f1f2]">~/stealth</span> cat README.md</div>
                         <div>
                             # Stealth Project in progress...<br/>
-                            &gt; Currently being held in private git repos until launch<br/><br/>
+                            &gt; Held in private git repos until launch<br/><br/>
                             ## TODOS Roadmap 2024<br/>
                             - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
                             - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
@@ -208,11 +209,11 @@ export default function Projects() {
                             - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br/>
                             - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br/>
                             - [x] Configured an NGINX reverse proxy to securely handle backend-frontend requests<br/>
-                            - [x] Improved AI prompt reliability/consistency with fine-tuning and function calling<br/>
+                            - [x] Improved AI prompt reliability and consistency with function calling<br/>
                             - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
                             - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
                             - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br/>
-                            - [ ] Launch
+                            - [x] 🚀 Launched: <a className="text-[#1ad878] hover:text-[#6366f1f2]" href="https://videoblog.ai" target="_blank">Video Blog AI</a>, a video to blog post AI converter
                         </div>
                         <div>
                             <div className="flex">
@@ -239,13 +240,6 @@ export default function Projects() {
                                         {proj.title}
                                     </h2>
                                     <div className="flex">
-                                        {/* <div className="px-4">
-                                            {proj.demo && (
-                                                <a href={proj.demo} target="_blank" rel="noopener noreferrer" className="flex items-center group">
-                                                    {linkOutSvg()}
-                                                </a>
-                                            )}
-                                        </div> */}
                                         <div>
                                             {proj.repo && (
                                                 <a href={proj.repo} target="_blank" rel="noopener noreferrer" className="flex items-center hover:scale-125">
