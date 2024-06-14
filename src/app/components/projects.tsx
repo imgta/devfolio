@@ -17,7 +17,7 @@ const current = {
     tagline: "",
     start: "01/2024",
     end: "06/2024",
-    href: "https://videoblog.ai/",
+    href: "https://videoblog.ai?utm_source=imgta.dev",
     stack: ["Nuxt", "FastAPI", "Cloudflare", "Oracle", "Docker", "Stripe", "Drizzle", "Supabase"],
     frames: ["Nuxt", "FastAPI", "Drizzle", "Supabase"],
     cloud: ["Cloudflare", "Oracle", "Docker", "Stripe"],
