@@ -17,7 +17,7 @@ const current = {
     tagline: "",
     start: "01/2024",
     end: "06/2024",
-    href: "https://videoblog.ai?utm_source=imgta.dev",
+    href: "https://videoblog.ai?utm_source=imgta.dev&utm_medium=referral",
     stack: ["Nuxt", "FastAPI", "Cloudflare", "Oracle", "Docker", "Stripe", "Drizzle", "Supabase"],
     frames: ["Nuxt", "FastAPI", "Drizzle", "Supabase"],
     cloud: ["Cloudflare", "Oracle", "Docker", "Stripe"],
@@ -213,7 +213,7 @@ export default function Projects() {
                             - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
                             - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
                             - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br/>
-                            - [x] 🚀 Launched: <a className="text-[#1ad878] hover:text-[#6366f1f2]" href="https://videoblog.ai?utm_source=imgta.dev" target="_blank">Video Blog AI</a>, a video to blog post AI converter
+                            - [x] 🚀 Launched: <a className="text-[#1ad878] hover:text-[#6366f1f2]" href="https://videoblog.ai?utm_source=imgta.dev&utm_medium=referral" target="_blank">Video Blog AI</a>, a video to blog post AI converter
                         </div>
                         <div>
                             <div className="flex">
