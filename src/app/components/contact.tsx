@@ -30,7 +30,7 @@ export default function Contact() {
                 <div className="border-l border-indigo-600">
                 <h3 className="pl-6 font-semibold text-gray-900">Schedule it:</h3>
                 <address className="border-l border-gray-200 pl-6 pt-2 not-italic text-gray-600">
-                <a className="hover:text-gray-900 font-medium" href="https://cal.com/gordonta" target="_blank"><p>Calendar</p></a>
+                <a className="hover:text-gray-900 font-medium" href="https://cal.com/imgta" target="_blank"><p>Calendar</p></a>
                 </address>
                 </div>
                 <div className="border-l border-indigo-600">
