@@ -1,5 +1,5 @@
-import AvatarPic from "@/app/components/avatar";
-import LogoSVG from "@/app/utils/logos";
+import AvatarPic from "@components/avatar";
+import LogoSVG from "@utils/logos";
 
 //------------------------------------------------------------
 const socials = [

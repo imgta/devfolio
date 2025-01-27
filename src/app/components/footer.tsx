@@ -1,4 +1,4 @@
-import LogoSVG from "@/app/utils/logos";
+import LogoSVG from "@utils/logos";
 
 //------------------------------------------------------------
 const socials = [

@@ -1,5 +1,4 @@
-import React from "react";
-import "@/app/assets/styles/avatar.css";
+import "@styles/avatar.css";
 
 //------------------------------------------------------------
 const AvatarPic = () => {
