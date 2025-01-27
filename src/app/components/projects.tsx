@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import "@/app/assets/styles/projects.css";
-import LogoSVG from "@/app/utils/logos";
-import playtrace from "@/app/assets/images/playtrace.webp";
-import playtracePng from "@/app/assets/images/playtrace.png";
-import vialect from "@/app/assets/images/vialect.webp";
-import vialectPng from "@/app/assets/images/vialect.png";
-import backtab from "@/app/assets/images/backtab.webp";
-import backtabPng from "@/app/assets/images/backtab.png";
-import videoblogaiSvg from "@/app/assets/images/logo-min.svg"
+import "@styles/projects.css";
+import LogoSVG from "@utils/logos";
+import playtrace from "@images/playtrace.webp";
+import playtracePng from "@images/playtrace.png";
+import vialect from "@images/vialect.webp";
+import vialectPng from "@images/vialect.png";
+import backtab from "@images/backtab.webp";
+import backtabPng from "@images/backtab.png";
+import videoblogaiSvg from "@images/logo-min.svg"
 
 //------------------------------------------------------------
 const current = {
