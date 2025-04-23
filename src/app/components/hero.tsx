@@ -48,7 +48,7 @@ export default function Hero() {
                     </div>
                     {/* PROFILE PIC */}
                     <div className="flex justify-center w-full max-w-2xl lg:-mb-8 lg:w-96 lg:flex-none">
-                        <div className="relative aspect-[2/1] h-full md:-mx-8 lg:mx-0 lg:aspect-auto">
+                        <div className="-mt-20 sm:mb-28 lg:mb-0 relative aspect-[2/1] sm:h-full md:-mx-8 lg:mx-0 lg:aspect-auto">
                             <AvatarPic />
                         </div>
                     </div>

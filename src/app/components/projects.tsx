@@ -8,7 +8,7 @@ import vialect from "@images/vialect.webp";
 import vialectPng from "@images/vialect.png";
 import backtab from "@images/backtab.webp";
 import backtabPng from "@images/backtab.png";
-import videoblogaiSvg from "@images/logo-min.svg"
+import videoblogaiSvg from "@images/logo-min.svg";
 
 //------------------------------------------------------------
 const current = {
@@ -142,7 +142,7 @@ export default function Projects() {
                     <div className="flex justify-between items-center">
                         <div>
                             <a href={current.href} target="_blank">
-                                <Image className="h-10 w-auto" src={videoblogaiSvg} alt="Video Blog AI" />
+                                <Image className="h-8 sm:h-10 w-auto" src={videoblogaiSvg} alt="Video Blog AI" />
                             </a>
                         </div>
                         <div>
@@ -156,7 +156,7 @@ export default function Projects() {
                         <div className="inline-flex group space-x-3">
                             {current.stack.map((tech, idx) => (
                                 <div key={idx} className="flex items-center justify-start h-full w-full hover:scale-110 text-center">
-                                    <LogoSVG name={tech.split(" ")[0]} wh={1.5} scale={1}/>
+                                    <LogoSVG name={tech.split(" ")[0]} wh={1.5} scale={1} />
                                     <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-0.5">
                                         {tech}
                                     </span>
@@ -169,62 +169,62 @@ export default function Projects() {
 
                 {/* CURRENT STACK */}
                 <div className="max-w-full lg:max-w-4xl mx-auto">
-                <div className="flex flex-col h-auto bg-[#1e1e1f] text-white font-mono rounded-xl text-sm sm:text-base">
-                    <div className="flex items-center h-8 px-3 bg-[#313132] rounded-t-xl">
-                        <div className="h-3 w-3 mr-2 rounded-full bg-[#ff5d5a]"></div>
-                        <div className="h-3 w-3 mr-2 rounded-full bg-[#f5c350]"></div>
-                        <div className="h-3 w-3 rounded-full bg-[#65cd57]"></div>
-                        <div className="mx-auto pr-14 text-sm">imgta@latest-project</div>
-                    </div>
-
-                    <div className="flex-1 p-1 sm:p-2 leading-[1.3rem]">
-                        <div>First start: Mon Jan 08 11:07:23 in private</div>
-                        <div><span className="text-[#6366f1f2]">~</span> cd stealth</div>
-                        <div><span className="text-[#6366f1f2]">~/stealth</span> ls -a</div>
-
-                        <div className="grid grid-cols-3 gap-x-3 sm:gap-x-8 sm:grid-cols-4">
-                            <div className="order-first">.</div>
-                            <div className="text-[#1ad878] sm:order-1 order-9">Cloudflare.d1</div>
-                            <div className="text-[#1ad878] sm:order-2 order-7">FastAPI.py</div>
-                            <div className="sm:order-3 order-5">README.md</div>
-                            <div className="sm:order-4 order-3">..</div>
-                            <div className="sm:order-5 order-1">Docker.yml</div>
-                            <div className="text-[#1ad878] sm:order-6 order-10">Nuxt-3.vue</div>
-                            <div className="text-[#1ad878] sm:order-7 order-8">Stripe.event</div>
-                            <div className="text-[#1ad878] sm:order-8 order-6">.2-Devs.env</div>
-                            <div className="sm:order-9 order-4">DrizzleORM.sql</div>
-                            <div className="sm:order-10 order-2">Oracle.ssh</div>
-                            <div className="order-last">Supabase.auth</div>
+                    <div className="flex flex-col h-auto bg-[#1e1e1f] text-white font-mono rounded-xl text-sm sm:text-base">
+                        <div className="flex items-center h-8 px-3 bg-[#313132] rounded-t-xl">
+                            <div className="h-3 w-3 mr-2 rounded-full bg-[#ff5d5a]"></div>
+                            <div className="h-3 w-3 mr-2 rounded-full bg-[#f5c350]"></div>
+                            <div className="h-3 w-3 rounded-full bg-[#65cd57]"></div>
+                            <div className="mx-auto pr-14 text-sm">imgta@prev-project</div>
                         </div>
 
-                        <div><span className="text-[#6366f1f2]">~/stealth</span> cat README.md</div>
-                        <div>
-                            # Stealth Project in progress...<br/>
-                            &gt; Held in private git repos until launch<br/><br/>
-                            ## TODOS Roadmap 2024<br/>
-                            - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br/>
-                            - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br/>
-                            - [x] Designed complete and thougthful schemas for our Cloudflare D1 serverless databases<br/>
-                            - [x] Set up protective database-schema interfacing with Drizzle ORM and Zod validation<br/>
-                            - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br/>
-                            - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br/>
-                            - [x] Configured an NGINX reverse proxy to securely handle backend-frontend requests<br/>
-                            - [x] Improved AI prompt reliability and consistency with function calling<br/>
-                            - [x] Introduced continuous AI input/output trace logs to streamline debugging<br/>
-                            - [x] Initiated and refined Stripe integration for subscription payment processing<br/>
-                            - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br/>
-                            - [x] 🚀 Launched: <a className="text-[#1ad878] hover:text-[#6366f1f2]" href="https://videoblog.ai?utm_source=imgta.dev&utm_medium=referral" target="_blank">Video Blog AI</a>, a video to blog post AI converter
-                        </div>
-                        <div>
-                            <div className="flex">
-                                <span className="text-[#6366f1f2]">~/stealth </span>
-                                <span className="terminal_cursor ml-2 mt-0.5"></span>
+                        <div className="flex-1 p-1 sm:p-2 leading-[1.3rem]">
+                            <div>First start: Mon Jan 08 11:07:23 in private</div>
+                            <div><span className="text-[#6366f1f2]">~</span> cd stealth</div>
+                            <div><span className="text-[#6366f1f2]">~/stealth</span> ls -a</div>
+
+                            <div className="grid grid-cols-3 gap-x-3 sm:gap-x-8 sm:grid-cols-4">
+                                <div className="order-first">.</div>
+                                <div className="text-[#1ad878] sm:order-1 order-9">Cloudflare.d1</div>
+                                <div className="text-[#1ad878] sm:order-2 order-7">FastAPI.py</div>
+                                <div className="sm:order-3 order-5">README.md</div>
+                                <div className="sm:order-4 order-3">..</div>
+                                <div className="sm:order-5 order-1">Docker.yml</div>
+                                <div className="text-[#1ad878] sm:order-6 order-10">Nuxt-3.vue</div>
+                                <div className="text-[#1ad878] sm:order-7 order-8">Stripe.event</div>
+                                <div className="text-[#1ad878] sm:order-8 order-6">.2-Devs.env</div>
+                                <div className="sm:order-9 order-4">DrizzleORM.sql</div>
+                                <div className="sm:order-10 order-2">Oracle.ssh</div>
+                                <div className="order-last">Supabase.auth</div>
                             </div>
-                            <br />
+
+                            <div><span className="text-[#6366f1f2]">~/stealth</span> cat README.md</div>
+                            <div>
+                                # Stealth Project in progress...<br />
+                                &gt; Held in private git repos until launch<br /><br />
+                                ## TODOS Roadmap 2024<br />
+                                - [x] Collaborated with a fellow dev to build a GenAI app for content creators<br />
+                                - [x] Accelerated Server-Side Rendering routes with SQLite integrations on the edge<br />
+                                - [x] Designed complete and thougthful schemas for our Cloudflare D1 serverless databases<br />
+                                - [x] Set up protective database-schema interfacing with Drizzle ORM and Zod validation<br />
+                                - [x] Created an inuitive user auth process via Supabase, middlewares, and in-house JWTs<br />
+                                - [x] Built, Dockerized, and deployed a FastAPI backend app on an Oracle Cloud instance<br />
+                                - [x] Configured an NGINX reverse proxy to securely handle backend-frontend requests<br />
+                                - [x] Improved AI prompt reliability and consistency with function calling<br />
+                                - [x] Introduced continuous AI input/output trace logs to streamline debugging<br />
+                                - [x] Initiated and refined Stripe integration for subscription payment processing<br />
+                                - [x] Leveraged MailerLite for email campaigns, FreshDesk for customer support ticketing<br />
+                                - [x] 🚀 Launched: <a className="text-[#1ad878] hover:text-[#6366f1f2]" href="https://videoblog.ai?utm_source=imgta.dev&utm_medium=referral" target="_blank">Video Blog AI</a>, a video to blog post AI converter
+                            </div>
+                            <div>
+                                <div className="flex">
+                                    <span className="text-[#6366f1f2]">~/stealth </span>
+                                    <span className="terminal_cursor ml-2 mt-0.5"></span>
+                                </div>
+                                <br />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
 
             <div className="mt-16 mx-auto max-w-6xl items-center lg:flex px-8">
@@ -262,7 +262,7 @@ export default function Projects() {
                                 <div className="mt-2 inline-flex group">
                                     {proj.stack.map((tech, techIndex) => (
                                         <div key={techIndex} className="flex items-center justify-start px-1 h-full w-full hover:scale-110 text-center">
-                                            <LogoSVG name={tech} wh={1.5} scale={1}/>
+                                            <LogoSVG name={tech} wh={1.5} scale={1} />
                                             <span className="overflow-hidden whitespace-nowrap transition-all duration-300 ease-in-out max-w-0 group-hover:max-w-xs group-hover:text-gray-900 text-xs font-semibold items-center hover:cursor-pointer pl-0.5">
                                                 {tech}
                                             </span>
@@ -277,18 +277,18 @@ export default function Projects() {
 
                             {/* PROJECT IMAGE */}
                             <div className="project lg:flex-1 overflow-hidden h-[420px]">
-                                <div onMouseEnter={ () => setHoverProjectId(proj.id) }
-                                onMouseLeave={ () => setHoverProjectId(null) }>
+                                <div onMouseEnter={() => setHoverProjectId(proj.id)}
+                                    onMouseLeave={() => setHoverProjectId(null)}>
                                     <Image
-                                    src={ hoverProjectId === proj.id
-                                        ? proj.imageWebp
-                                        : proj.imagePng
-                                    }
-                                    alt={`${proj.title} project image`}
-                                    className={ hoverProjectId === proj.id
-                                        ? "webp rounded-2xl object-cover"
-                                        : "rounded-2xl object-cover"
-                                    }/>
+                                        src={hoverProjectId === proj.id
+                                            ? proj.imageWebp
+                                            : proj.imagePng
+                                        }
+                                        alt={`${proj.title} project image`}
+                                        className={hoverProjectId === proj.id
+                                            ? "webp rounded-2xl object-cover"
+                                            : "rounded-2xl object-cover"
+                                        } />
                                 </div>
                             </div>
                         </div>
