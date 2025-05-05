@@ -8,6 +8,8 @@ import vialect from "@images/vialect.webp";
 import vialectPng from "@images/vialect.png";
 import backtab from "@images/backtab.webp";
 import backtabPng from "@images/backtab.png";
+import wordwisp from "@images/wordwisp.webp";
+import wordwispPng from "@images/wordwisp.png";
 import videoblogaiSvg from "@images/logo-min.svg";
 
 //------------------------------------------------------------
@@ -36,6 +38,20 @@ const current = {
 const projects = [
     {
         id: 1,
+        title: "Word Wisp",
+        tagline: "AI Literary Co-Author",
+        start: "05/2025",
+        end: "05/2025",
+        href: "#wordwisp",
+        imageWebp: wordwisp,
+        imagePng: wordwispPng,
+        stack: ["NextJs", "EC2", "Neon", "Chroma", "Docker", "OpenAI"],
+        description:
+            "Word Wisp is an AI-powered writing assistant that rewrites user text in the styles of classic authors using semantic search over embedded excerpts from public domain literature.",
+        demo: "https://wisp-eta.vercel.app/",
+    },
+    {
+        id: 2,
         title: "Vialect",
         tagline: "Multimedia Transformer",
         start: "11/2023",
@@ -50,7 +66,7 @@ const projects = [
         repo: "https://github.com/imgta/vialect",
     },
     {
-        id: 2,
+        id: 3,
         title: "playTrace",
         tagline: "Social Events Hosting",
         start: "08/2023",
@@ -61,11 +77,9 @@ const projects = [
         stack: ["Nuxt", "Vue", "Strapi", "Cloudflare", "Supabase", "Render"],
         description:
             "playTrace is a full-stack, social events hosting app that aims to electrify social circles and allow communities to be explored, candidly, through customizable event pages.",
-        // demo: "https://playtrace.app",
-        repo: "https://github.com/imgta/playtrace-nuxt",
     },
     {
-        id: 3,
+        id: 4,
         title: "backTAB",
         tagline: "Receipts Tracking",
         start: "06/2023",
@@ -246,6 +260,11 @@ export default function Projects() {
                                                     {getRepoLogo(proj.repo)}
                                                 </a>
                                             )}
+                                            {proj.demo && (
+                                                <div className="flex items-center nav-link text-sm font-medium -mb-4">
+                                                    <a href={proj.demo} target="_blank" rel="noopener noreferrer">Demo</a>
+                                                </div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -255,7 +274,7 @@ export default function Projects() {
                                         {proj.tagline}
                                     </span>
                                     <p className="inline-flex text-gray-600 text-sm font-mono">
-                                        {proj.start}&mdash;{proj.end}
+                                        {proj.start !== proj.end ? `${proj.start}-${proj.end}` : proj.start}
                                     </p>
                                 </div>
                                 {/* TECH STACK */}
