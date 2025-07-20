@@ -1,6 +1,6 @@
-import { LogoSVG } from '@/components/ui/LogoSVG';
-import { TypedHeader } from '@/components/ui/TypedHeader';
-import { INFO } from '@/utils/misc';
+import { LogoSVG } from '@/components/ui/LogoSVG.tsx';
+import { TypedHeader } from '@/components/ui/TypedHeader.tsx';
+import { INFO } from '@/utils/misc.ts';
 
 //------------------------------------------------------------
 
