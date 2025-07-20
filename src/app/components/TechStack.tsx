@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import TypedHeader from '@/components/ui/TypedHeader';
-import LogoSVG from '@/components/ui/LogoSVG';
+import { LogoSVG } from '@/components/ui/LogoSVG';
 import { cn } from '@/lib/utils';
 
 //------------------------------------------------------------
@@ -41,7 +41,7 @@ function findTechGroup(hoverId: string | null) {
         .map(tech => tech.id);
 }
 
-export default function TechStack() {
+export function TechStack() {
     const [hoveredTechId, setHoveredTechId] = useState<string | null>(null);
     const relatedTechIds = useMemo(() => findTechGroup(hoveredTechId), [hoveredTechId]);
 

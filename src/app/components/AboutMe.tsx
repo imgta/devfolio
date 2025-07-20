@@ -57,7 +57,7 @@ const ABOUTME = [
 
 //------------------------------------------------------------
 
-export default function AboutMe() {
+export function AboutMe() {
     const [expand, setExpand] = useState(false);
 
     return (

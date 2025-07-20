@@ -8,7 +8,7 @@ const NAVLINKS = [
 
 //------------------------------------------------------------
 
-export default function NavBar() {
+export function NavBar() {
     const scrollTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
 
     return (

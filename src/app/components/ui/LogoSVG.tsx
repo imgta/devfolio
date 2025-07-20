@@ -85,7 +85,7 @@ interface LogoProps extends React.SVGProps<SVGSVGElement> {
 
 //------------------------------------------------------------
 
-export default function LogoSVG({ name, wh, scale }: LogoProps) {
+export function LogoSVG({ name, wh, scale }: LogoProps) {
     const normalized = name
         .replace(/[\s.]+/g, '') // remove whitespaces and periods
         .toLowerCase();

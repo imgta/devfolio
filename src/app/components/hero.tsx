@@ -1,10 +1,10 @@
-import LogoSVG from '@/components/ui/LogoSVG';
+import { LogoSVG } from '@/components/ui/LogoSVG';
 import TypedHeader from '@/components/ui/TypedHeader';
 import { INFO } from '@utils/misc';
 
 //------------------------------------------------------------
 
-export default function Hero() {
+export function Hero() {
     return (
         <section className="pb-12 pt-24 sm:pb-16 sm:pt-32 max-sm:px-4">
             <div className="sm:pb-4 lg:pb-0">

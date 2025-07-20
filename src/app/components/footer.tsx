@@ -1,10 +1,10 @@
-import LogoSVG from '@/components/ui/LogoSVG';
+import { LogoSVG } from '@/components/ui/LogoSVG';
 import TypedHeader from '@/components/ui/TypedHeader';
 import { INFO } from '@utils/misc';
 
 //------------------------------------------------------------
 
-export default function Footer() {
+export function Footer() {
     return (
         <>
             <section className="mx-auto max-w-7xl px-6 lg:px-8">
