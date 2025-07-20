@@ -6,7 +6,7 @@ interface TypedHeaderProps {
 
 //------------------------------------------------------------
 
-export default function TypedHeader({ id, title, typedText }: TypedHeaderProps) {
+export function TypedHeader({ id, title, typedText }: TypedHeaderProps) {
     return (
         <div id={id} className="scroll-mt-16 group text-[2.4rem] font-bold text-gray-900 text-center tracking-tight leading-[1.2]">
             <div className="inline-block group-hover:hidden">
