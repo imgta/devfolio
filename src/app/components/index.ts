@@ -1,6 +1,6 @@
-export { default as NavBar } from '@components/NavBar';
-export { default as Hero } from '@components/Hero';
-export { default as TechStack } from '@components/TechStack';
-export { default as Projects } from '@components/Projects';
-export { default as Footer } from '@components/Footer';
-export { default as AboutMe } from '@components/About';
+export { default as NavBar } from './NavBar';
+export { default as Hero } from './Hero';
+export { default as TechStack } from './TechStack';
+export { default as Projects } from './Projects';
+export { default as Footer } from './Footer';
+export { default as AboutMe } from './About';
