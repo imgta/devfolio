@@ -1,5 +1,5 @@
-import { LogoSVG } from './ui/logoicon';
-import { TypedHeader } from './ui/typedheader';
+import { LogoSVG } from './ui/LogoIcon';
+import { TypedHeader } from './ui/TypedHeader';
 import { INFO } from '@/utils/misc';
 
 //------------------------------------------------------------

@@ -1,9 +1,9 @@
 'use client';
 
-import { Hero } from '@/components/hero';
-import { TechStack } from '@/components/techstacks';
-import { AboutMe } from '@/components/aboutme';
-import { Projects } from '@/components/projects';
+import { Hero } from '@/components/Hero';
+import { TechStack } from '@/components/TechStack';
+import { AboutMe } from '@/components/AboutMe';
+import { Projects } from '@/components/Projects';
 
 //------------------------------------------------------------
 

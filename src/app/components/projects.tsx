@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { LogoSVG, VibbySVG } from './ui/logoicon';
-import { TypedHeader } from './ui/typedheader';
+import { LogoSVG, VibbySVG } from './ui/LogoIcon';
+import { TypedHeader } from './ui/TypedHeader';
 import { cn } from '@/lib/utils';
 
 //------------------------------------------------------------
