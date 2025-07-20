@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { TypedHeader } from '@/components/ui/TypedHeader';
+import { TypedHeader } from './ui/TypedHeader';
 import { cn } from '@/lib/utils';
 
 //------------------------------------------------------------
