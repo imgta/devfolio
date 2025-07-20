@@ -29,13 +29,10 @@
         "./src/app/*"
       ],
       "@styles/*": [
-        "src/app/assets/styles/*"
-      ],
-      "@images/*": [
-        "src/app/assets/images/*"
+        "./src/app/assets/styles/*"
       ],
       "@utils/*": [
-        "src/app/utils/*"
+        "./src/app/utils/*"
       ]
     }
   },
