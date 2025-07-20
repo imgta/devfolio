@@ -23,15 +23,18 @@
         "name": "next"
       }
     ],
-    "baseUrl": "./src/app",
+    "baseUrl": "src/app/",
     "paths": {
-      "@/*": [
-        "/*"
+      "@/components/*": [
+        "components/*"
       ],
-      "@styles/*": [
+      "@/styles/*": [
         "assets/styles/*"
       ],
-      "@utils/*": [
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/utils/*": [
         "utils/*"
       ]
     }
