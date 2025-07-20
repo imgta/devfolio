@@ -42,7 +42,7 @@
       ],
       "@utils/*": [
         "src/app/utils/*"
-      ],
+      ]
     }
   },
   "include": [
