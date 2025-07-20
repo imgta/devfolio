@@ -1,3 +1,5 @@
+'use client';
+
 interface TypedHeaderProps {
     id?: string;
     title: string;
