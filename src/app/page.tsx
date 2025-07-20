@@ -1,9 +1,9 @@
 'use client';
 
-import { Hero } from '@/components/Hero.tsx';
-import { TechStack } from '@/components/TechStack.tsx';
-import { AboutMe } from '@/components/AboutMe.tsx';
-import { Projects } from '@/components/Projects.tsx';
+import { Hero } from '@/components/Hero';
+import { TechStack } from '@/components/TechStack';
+import { AboutMe } from '@/components/AboutMe';
+import { Projects } from '@/components/Projects';
 
 //------------------------------------------------------------
 

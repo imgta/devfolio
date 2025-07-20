@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
-import { TypedHeader } from '@/components/ui/TypedHeader.tsx';
-import { LogoSVG } from '@/components/ui/LogoSVG.tsx';
-import { cn } from '@/lib/utils.ts';
+import { TypedHeader } from '@/components/ui/TypedHeader';
+import { LogoSVG } from '@/components/ui/LogoSVG';
+import { cn } from '@/lib/utils';
 
 //------------------------------------------------------------
 

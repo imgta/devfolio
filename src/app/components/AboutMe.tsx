@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { TypedHeader } from '@/components/ui/TypedHeader.tsx';
-import { cn } from '@/lib/utils.ts';
+import { TypedHeader } from '@/components/ui/TypedHeader';
+import { cn } from '@/lib/utils';
 
 //------------------------------------------------------------
 
