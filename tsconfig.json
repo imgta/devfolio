@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -25,12 +25,15 @@
     ],
     "baseUrl": ".",
     "paths": {
-      // "@/*": ["src/*"],
-      "@components": ["src/app/components/index"],
-      "@components/*": ["src/app/components/*"],
-      "@styles/*": ["src/app/assets/styles/*"],
-      "@images/*": ["src/app/assets/images/*"],
-      "@utils/*": ["src/app/utils/*"],
+      "@/*": [
+        "./src/app/*"
+      ],
+      "@styles/*": [
+        "./src/app/assets/styles/*"
+      ],
+      "@utils/*": [
+        "./src/app/utils/*"
+      ]
     }
   },
   "include": [
@@ -38,7 +41,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src"
+    "./src"
   ],
   "exclude": [
     "node_modules"
