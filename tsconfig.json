@@ -29,7 +29,7 @@
         "src/app/*"
       ],
       "@components": [
-        "src/app/components/index"
+        "src/app/components/index.ts"
       ],
       "@components/*": [
         "src/app/components/*"
