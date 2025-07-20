@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
@@ -25,12 +25,24 @@
     ],
     "baseUrl": ".",
     "paths": {
-      // "@/*": ["src/*"],
-      "@components": ["src/app/components/index"],
-      "@components/*": ["src/app/components/*"],
-      "@styles/*": ["src/app/assets/styles/*"],
-      "@images/*": ["src/app/assets/images/*"],
-      "@utils/*": ["src/app/utils/*"],
+      "@/*": [
+        "src/app/*"
+      ],
+      "@components": [
+        "src/app/components/index"
+      ],
+      "@components/*": [
+        "src/app/components/*"
+      ],
+      "@styles/*": [
+        "src/app/assets/styles/*"
+      ],
+      "@images/*": [
+        "src/app/assets/images/*"
+      ],
+      "@utils/*": [
+        "src/app/utils/*"
+      ],
     }
   },
   "include": [

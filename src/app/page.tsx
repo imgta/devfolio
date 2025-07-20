@@ -1,25 +1,21 @@
-"use client";
+'use client';
 
-import React from "react";
-import "@styles/typing.css"
-import { NavBar, Hero, TechStack, Projects, Contact, Footer, AboutMe } from "@components";
+import React from 'react';
+import { NavBar, Hero, TechStack, AboutMe, Projects, Footer } from '@components';
+
+//------------------------------------------------------------
 
 export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="isolate">
-          <div className="pb-32">
-              <Hero />
-              <AboutMe />
-              <TechStack />
-              <Projects />
-              <Contact />
-          </div>
+      <main className="isolate pb-32">
+        <Hero />
+        <TechStack />
+        <AboutMe />
+        <Projects />
       </main>
-      <footer>
-          <Footer/>
-      </footer>
+      <Footer />
     </>
-  )
+  );
 }
