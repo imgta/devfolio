@@ -1,5 +1,5 @@
-import LogoSVG from '@components/ui/LogoSVG';
-import TypedHeader from '@components/ui/TypedHeader';
+import LogoSVG from '@/components/ui/LogoSVG';
+import TypedHeader from '@/components/ui/TypedHeader';
 import { INFO } from '@utils/misc';
 
 //------------------------------------------------------------
