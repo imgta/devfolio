@@ -1,3 +1,5 @@
+'use client';
+
 const NAVLINKS = [
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
