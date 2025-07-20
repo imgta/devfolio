@@ -23,16 +23,16 @@
         "name": "next"
       }
     ],
-    "baseUrl": "./src/app/",
+    "baseUrl": "./src/app",
     "paths": {
       "@/*": [
-        "./*"
+        "/*"
       ],
       "@styles/*": [
-        "./assets/styles/*"
+        "assets/styles/*"
       ],
       "@utils/*": [
-        "./utils/*"
+        "utils/*"
       ]
     }
   },
